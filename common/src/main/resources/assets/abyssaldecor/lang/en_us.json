@@ -1,4 +1,8 @@
 {
+  "itemGroup.abyssaldecor.abyssaldecor_tab": "Abyssal Decor",
+
+  "item.abyssaldecor.gargoyleitem": "Gargoyle",
+
   "block.abyssaldecor.pearl_brick_stairs": "Pearl Brick Stairs",
   "painting.abyssaldecor.flower_painting.title": "Flower Painting",
   "block.abyssaldecor.riveted_deepbronze_stairs": "Riveted Deepbronze Stairs",
@@ -601,7 +605,6 @@
   "block.abyssaldecor.ceiling_iron_lamp_on": "Ceiling Iron Lamp",
   "block.abyssaldecor.black_pearl_pillar": "Black Pearl Pillar",
   "painting.abyssaldecor.void_painting.title": "Void Painting",
-  "item_group.abyssaldecor.abyssaldecor": "Abyssal Decor",
   "painting.abyssaldecor.werewolf_painting.author": "Starrysock",
   "block.abyssaldecor.spidercorn_crop_2": "Spidercorn",
   "painting.abyssaldecor.beach_painting.title": "Beach Painting",
