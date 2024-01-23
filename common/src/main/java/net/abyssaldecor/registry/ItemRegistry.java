@@ -10,8 +10,8 @@ import static net.abyssaldecor.registry.ItemGroupRegistry.*;
 
 public class ItemRegistry {
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(MOD_ID, Registries.ITEM);
-    public static final RegistrySupplier<Item> GARGOYLE_ITEM = ITEMS.register("gargoyleitem", () ->
-            new Item(new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
+    public static final RegistrySupplier<Item> GARGOYLE_ITEM = ITEMS.register("gargoyleitem", () -> new Item(new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
+    public static final RegistrySupplier<Item> AMARANTH_ITEM = ITEMS.register("amaranthitem", () -> new Item(new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
 
     public static void init() {
         ITEMS.register();
