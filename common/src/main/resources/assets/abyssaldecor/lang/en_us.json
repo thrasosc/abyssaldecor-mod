@@ -2,7 +2,8 @@
   "itemGroup.abyssaldecor.abyssaldecor_tab": "Abyssal Decor",
 
   "item.abyssaldecor.gargoyleitem": "Gargoyle",
-  "item.abyssaldecor.amaranth": "Amaranth",
+  "item.abyssaldecor.amaranthitem": "Amaranth",
+  "item.abyssaldecor.amaranthseeds": "Amaranth Seeds",
 
   "block.abyssaldecor.pearl_brick_stairs": "Pearl Brick Stairs",
   "painting.abyssaldecor.flower_painting.title": "Flower Painting",
@@ -10,7 +11,6 @@
   "block.abyssaldecor.amaranth_2": "Amaranth",
   "block.abyssaldecor.ornate_seabrass_bars": "Ornate Seabrass Bars",
   "block.abyssaldecor.ripe_bog_apple": "Ripe Bog Apple",
-  "block.abyssaldecor.amaranth_1": "Amaranth Seeds",
   "painting.abyssaldecor.midnight_pines_painting.title": "Midnight Pines Painting",
   "block.abyssaldecor.amaranth_3": "Amaranth",
   "painting.abyssaldecor.beach_painting.author": "Starrysock",
