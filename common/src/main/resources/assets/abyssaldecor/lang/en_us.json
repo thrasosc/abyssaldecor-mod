@@ -1,9 +1,16 @@
 {
   "itemGroup.abyssaldecor.abyssaldecor_tab": "Abyssal Decor",
 
-  "item.abyssaldecor.gargoyleitem": "Gargoyle",
-  "item.abyssaldecor.amaranthitem": "Amaranth",
-  "item.abyssaldecor.amaranthseeds": "Amaranth Seeds",
+  "item.abyssaldecor.gargoyle": "Gargoyle",
+  "item.abyssaldecor.amaranth_pinnacle": "Amaranth Pinnacle",
+  "item.abyssaldecor.amaranth_seeds": "Amaranth Seeds",
+  "item.abyssaldecor.black_pearl": "Black Pearl",
+  "item.abyssaldecor.black_pearl_meal": "Black Pearl Meal",
+  "item.abyssaldecor.blackwood_door": "Blackwood Door",
+  "item.abyssaldecor.blood_coral_bud": "Blood Coral Bud",
+  "item.abyssaldecor.blood_coral_door": "Blood Coral Door",
+  "item.abyssaldecor.bog_apple_leaves": "Bog Apple Leaves",
+  "item.abyssaldecor.bog_apple": "Bog Apple",
 
   "block.abyssaldecor.pearl_brick_stairs": "Pearl Brick Stairs",
   "painting.abyssaldecor.flower_painting.title": "Flower Painting",

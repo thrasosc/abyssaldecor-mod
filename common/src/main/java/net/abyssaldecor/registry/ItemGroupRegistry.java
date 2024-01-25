@@ -15,7 +15,7 @@ public class ItemGroupRegistry {
     public static final DeferredRegister<CreativeModeTab> TABS = DeferredRegister.create(MOD_ID, Registries.CREATIVE_MODE_TAB);
     public static final RegistrySupplier<CreativeModeTab> ABYSSALDECOR_TAB = TABS.register("abyssaldecor_tab", () ->
             CreativeTabRegistry.create(Component.translatable("itemGroup." + MOD_ID + ".abyssaldecor_tab"),
-                    () -> new ItemStack(AMARANTH_ITEM.get())));
+                    () -> new ItemStack(AMARANTH_PINNACLE.get())));
 
     public static void init() {
         TABS.register();
