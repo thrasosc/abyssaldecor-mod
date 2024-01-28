@@ -49,6 +49,9 @@ public class ItemRegistry {
     public static final RegistrySupplier<Item> FEVER_BLOSSOM_CROP_6 = ITEMS.register("fever_blossom_crop_6", () -> new Item(new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
     public static final RegistrySupplier<Item> FEVER_BLOSSOM_CROP_7 = ITEMS.register("fever_blossom_crop_7", () -> new Item(new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
     public static final RegistrySupplier<Item> FEVER_BLOSSOM_TEA = ITEMS.register("fever_blossom_tea", () -> new Item(new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
+    public static final RegistrySupplier<Item> GILDED_BLACK_PEARL_DOOR = ITEMS.register("gilded_black_pearl_door", () -> new Item(new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
+    public static final RegistrySupplier<Item> GRIME = ITEMS.register("grime", () -> new Item(new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
+    public static final RegistrySupplier<Item> GRIME_CARPET = ITEMS.register("grime_carpet", () -> new Item(new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
 
 
     public static void init() {
