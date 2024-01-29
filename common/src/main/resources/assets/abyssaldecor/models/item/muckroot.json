@@ -1,7 +1,7 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "abyssal_decor:item/muckrooticon"
+    "layer0": "abyssaldecor:item/muckrooticon"
   },
   "render_type": "translucent"
 }

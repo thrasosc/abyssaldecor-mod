@@ -52,6 +52,46 @@ public class ItemRegistry {
     public static final RegistrySupplier<Item> GILDED_BLACK_PEARL_DOOR = ITEMS.register("gilded_black_pearl_door", () -> new Item(new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
     public static final RegistrySupplier<Item> GRIME = ITEMS.register("grime", () -> new Item(new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
     public static final RegistrySupplier<Item> GRIME_CARPET = ITEMS.register("grime_carpet", () -> new Item(new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
+    public static final RegistrySupplier<Item> IRON_PUSH_DOOR = ITEMS.register("iron_push_door", () -> new Item(new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
+    public static final RegistrySupplier<Item> LION_STATUE = ITEMS.register("lion_statue", () -> new Item(new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
+    public static final RegistrySupplier<Item> MOLDY_FUZZ = ITEMS.register("moldy_fuzz", () -> new Item(new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
+    public static final RegistrySupplier<Item> BULBOUS_MOLDY_HANGER = ITEMS.register("bulbous_moldy_hanger", () -> new Item(new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
+    public static final RegistrySupplier<Item> MOLDY_HANGER = ITEMS.register("moldy_hanger", () -> new Item(new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
+    public static final RegistrySupplier<Item> MOLDY_STALK_SOLO = ITEMS.register("moldy_stalk_solo", () -> new Item(new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
+    public static final RegistrySupplier<Item> MOLDY_SPROUTS = ITEMS.register("moldy_sprouts", () -> new Item(new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
+    public static final RegistrySupplier<Item> MOLDY_STALKS = ITEMS.register("moldy_stalks", () -> new Item(new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
+    public static final RegistrySupplier<Item> MUCKROOT = ITEMS.register("muckroot", () -> new Item(new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
+    public static final RegistrySupplier<Item> COOKED_MUCKROOT = ITEMS.register("cooked_muckroot", () -> new Item(new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
+    public static final RegistrySupplier<Item> MUCKROOT_SOUP = ITEMS.register("muckroot_soup", () -> new Item(new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
+    public static final RegistrySupplier<Item> NITHING = ITEMS.register("nithing", () -> new Item(new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
+    public static final RegistrySupplier<Item> BARK_ORCHID = ITEMS.register("bark_orchid", () -> new Item(new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
+    public static final RegistrySupplier<Item> RAW_SEABRASS = ITEMS.register("raw_seabrass", () -> new Item(new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
+    public static final RegistrySupplier<Item> SEABRASS_NUGGET = ITEMS.register("seabrass_nugget", () -> new Item(new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
+    public static final RegistrySupplier<Item> SHELL = ITEMS.register("shell", () -> new Item(new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
+    public static final RegistrySupplier<Item> SHIP_WHEEL = ITEMS.register("ship_wheel", () -> new Item(new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
+    public static final RegistrySupplier<Item> SHORTGILLS = ITEMS.register("shortgills", () -> new Item(new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
+    public static final RegistrySupplier<Item> SLUMP_LIGHT = ITEMS.register("slump_light", () -> new Item(new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
+    public static final RegistrySupplier<Item> HANGING_WEB_ITEM = ITEMS.register("hanging_web_item", () -> new Item(new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
+    public static final RegistrySupplier<Item> SPIDERCORN_CROP = ITEMS.register("spidercorn_crop", () -> new Item(new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
+    public static final RegistrySupplier<Item> POPPED_SPIDERCORN = ITEMS.register("popped_spidercorn", () -> new Item(new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
+    public static final RegistrySupplier<Item> DRIED_STARFISH = ITEMS.register("dried_starfish", () -> new Item(new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
+    public static final RegistrySupplier<Item> STARFISH = ITEMS.register("starfish", () -> new Item(new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
+    public static final RegistrySupplier<Item> STARLIGHT = ITEMS.register("starlight", () -> new Item(new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
+    public static final RegistrySupplier<Item> TELESCOPE_BOTTOM = ITEMS.register("telescope_bottom", () -> new Item(new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
+    public static final RegistrySupplier<Item> VELVET_BARRIER_BASE = ITEMS.register("velvet_barrier_base", () -> new Item(new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
+    public static final RegistrySupplier<Item> SNAPLEAF = ITEMS.register("snapleaf", () -> new Item(new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
+    public static final RegistrySupplier<Item> WHITE_PEARL = ITEMS.register("white_pearl", () -> new Item(new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
+    public static final RegistrySupplier<Item> WHITE_PEARL_BAR_DOOR = ITEMS.register("white_pearl_bar_door", () -> new Item(new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
+    public static final RegistrySupplier<Item> WHITE_PEARLMEAL = ITEMS.register("white_pearlmeal", () -> new Item(new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
+    public static final RegistrySupplier<Item> WHITE_WOOD_DOOR = ITEMS.register("white_wood_door", () -> new Item(new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
+    public static final RegistrySupplier<Item> WISTERIA_ELDER_WALL = ITEMS.register("wisteria_elder_wall", () -> new Item(new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
+    public static final RegistrySupplier<Item> WISTERIA_PURPLE_WALL = ITEMS.register("wisteria_purple_wall", () -> new Item(new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
+    public static final RegistrySupplier<Item> DUSTY_CD = ITEMS.register("dusty_cd", () -> new Item(new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
+
+
+
+
+
 
 
     public static void init() {

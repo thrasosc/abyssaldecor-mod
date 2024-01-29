@@ -1,7 +1,7 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "abyssal_decor:item/orchid2"
+    "layer0": "abyssaldecor:item/orchid2"
   },
   "render_type": "translucent"
 }
