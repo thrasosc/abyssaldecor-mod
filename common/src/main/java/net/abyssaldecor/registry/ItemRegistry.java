@@ -89,12 +89,6 @@ public class ItemRegistry {
     public static final RegistrySupplier<Item> WISTERIA_PURPLE_WALL = ITEMS.register("wisteria_purple_wall", () -> new Item(new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
     public static final RegistrySupplier<Item> DUSTY_CD = ITEMS.register("dusty_cd", () -> new Item(new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
 
-
-
-
-
-
-
     public static void init() {
         ITEMS.register();
     }
