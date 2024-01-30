@@ -10,7 +10,7 @@ import static net.abyssaldecor.registry.ItemGroupRegistry.*;
 
 public class ItemRegistry {
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(MOD_ID, Registries.ITEM);
-    public static final RegistrySupplier<Item> GARGOYLE = ITEMS.register("gargoyle", () -> new Item(new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
+    public static final RegistrySupplier<Item> ABYSSAL_DECOR = ITEMS.register("abyssal_decor", () -> new Item(new Item.Properties()));
     public static final RegistrySupplier<Item> AMARANTH_PINNACLE = ITEMS.register("amaranth_pinnacle", () -> new Item(new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
     public static final RegistrySupplier<Item> AMARANTH_SEEDS = ITEMS.register("amaranth_seeds", () -> new Item(new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
     public static final RegistrySupplier<Item> BLACK_PEARL = ITEMS.register("black_pearl", () -> new Item(new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
@@ -49,6 +49,7 @@ public class ItemRegistry {
     public static final RegistrySupplier<Item> FEVER_BLOSSOM_CROP_6 = ITEMS.register("fever_blossom_crop_6", () -> new Item(new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
     public static final RegistrySupplier<Item> FEVER_BLOSSOM_CROP_7 = ITEMS.register("fever_blossom_crop_7", () -> new Item(new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
     public static final RegistrySupplier<Item> FEVER_BLOSSOM_TEA = ITEMS.register("fever_blossom_tea", () -> new Item(new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
+    public static final RegistrySupplier<Item> GARGOYLE = ITEMS.register("gargoyle", () -> new Item(new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
     public static final RegistrySupplier<Item> GILDED_BLACK_PEARL_DOOR = ITEMS.register("gilded_black_pearl_door", () -> new Item(new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
     public static final RegistrySupplier<Item> GRIME = ITEMS.register("grime", () -> new Item(new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
     public static final RegistrySupplier<Item> GRIME_CARPET = ITEMS.register("grime_carpet", () -> new Item(new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
