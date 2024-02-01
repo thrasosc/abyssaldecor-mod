@@ -1,6 +1,6 @@
 modLoader = "javafml"
 loaderVersion = "[47,)"
-#issueTrackerURL = ""
+issueTrackerURL = "https://github.com/kyber-6/abyssaldecor-mod/issues"
 license = "GNU GPLv3"
 
 [[mods]]
@@ -8,6 +8,7 @@ modId = "abyssaldecor"
 version = "${version}"
 displayName = "Abyssal Decor"
 authors = ["Starrysock, Pixel Dream Studios"]
+displayURL="https://www.curseforge.com/minecraft/mc-mods/abyssal-decor"
 description = '''
 (Mostly) Vanilla style decorative blocks, (mostly) inspired by Victorian and Lovecraftian themes!
 '''
