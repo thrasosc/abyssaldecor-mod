@@ -1,10 +1,12 @@
 package net.abyssaldecor.registry;
 
+import dev.architectury.registry.CreativeTabRegistry;
 import dev.architectury.registry.registries.DeferredRegister;
 import dev.architectury.registry.registries.RegistrySupplier;
 import net.abyssaldecor.block.AbyssalLanternBlock;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.item.BlockItem;
+import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
@@ -15,18 +17,10 @@ import static net.abyssaldecor.registry.ItemGroupRegistry.ABYSSALDECOR_TAB;
 
 public class BlockRegistry {
     public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(MOD_ID, Registries.BLOCK);
-    //TODO fix item texture of abyssal lantern, also something is causing crashes on Forge
-    public static final RegistrySupplier<Block> ABYSSAL_LANTERN = registerBlockWithItem(
-            "abyssal_lantern", new AbyssalLanternBlock(BlockBehaviour.Properties.copy(Blocks.REDSTONE_LAMP))
-    );
-    public static final RegistrySupplier<Block> TEST_BLOCK = registerBlockWithItem(
-            "test_block", new Block(BlockBehaviour.Properties.copy(Blocks.ACACIA_WOOD))
-    );
-
-    private static RegistrySupplier<Block> registerBlockWithItem(String name, Block block) {
-        ItemRegistry.ITEMS.register(name, () -> new BlockItem(block, new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
-        return BLOCKS.register(name, () -> block);
-    }
+    public static final RegistrySupplier<Block> ABYSSAL_LANTERN_BLOCK = BLOCKS.register("abyssal_lantern", () -> new AbyssalLanternBlock(BlockBehaviour.Properties.copy(Blocks.REDSTONE_LAMP)));
+    public static final RegistrySupplier<BlockItem> ABYSSAL_LANTERN_ITEM = ItemRegistry.ITEMS.register(ABYSSAL_LANTERN_BLOCK.getId(), () -> new BlockItem(ABYSSAL_LANTERN_BLOCK.get(), new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
+    public static final RegistrySupplier<Block> AMARANTH_CRATE_BLOCK = BLOCKS.register("amaranth_crate", () -> new Block(BlockBehaviour.Properties.copy(Blocks.COMPOSTER)));
+    public static final RegistrySupplier<BlockItem> AMARANTH_CRATE_ITEM = ItemRegistry.ITEMS.register(AMARANTH_CRATE_BLOCK.getId(), () -> new BlockItem(AMARANTH_CRATE_BLOCK.get(), new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
 
     public static void init() {
         BLOCKS.register();
