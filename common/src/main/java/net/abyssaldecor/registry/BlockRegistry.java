@@ -20,6 +20,9 @@ public class BlockRegistry {
     public static final RegistrySupplier<BlockItem> ABYSSAL_LANTERN_ITEM = BLOCK_ITEMS.register(ABYSSAL_LANTERN_BLOCK.getId(), () -> new BlockItem(ABYSSAL_LANTERN_BLOCK.get(), new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
     public static final RegistrySupplier<Block> AMARANTH_CRATE_BLOCK = BLOCKS.register("amaranth_crate", () -> new Block(BlockBehaviour.Properties.copy(Blocks.COMPOSTER)));
     public static final RegistrySupplier<BlockItem> AMARANTH_CRATE_ITEM = BLOCK_ITEMS.register(AMARANTH_CRATE_BLOCK.getId(), () -> new BlockItem(AMARANTH_CRATE_BLOCK.get(), new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
+    public static final RegistrySupplier<Block> AMMONITE_BLOCK = BLOCKS.register("ammonite", () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE)));
+    public static final RegistrySupplier<BlockItem> AMMONITE_ITEM = BLOCK_ITEMS.register(AMMONITE_BLOCK.getId(), () -> new BlockItem(AMMONITE_BLOCK.get(), new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
+
 
     public static void init() {
         BLOCKS.register();
