@@ -3,16 +3,18 @@
   "id": "abyssaldecor",
   "version": "${version}",
   "name": "Abyssal Decor",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "description": "(Mostly) Vanilla style decorative blocks, (mostly) inspired by Victorian and Lovecraftian themes!",
   "authors": [
-    "Me!"
+    "Starrysock",
+    "Pixel Dream Studios"
   ],
   "contact": {
-    "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
+    "homepage": "https://pixeldreamstudios.net",
+    "sources": "https://github.com/kyber-6/abyssaldecor-mod",
+    "issues": "https://github.com/kyber-6/abyssaldecor-mod/issues"
   },
-  "license": "Insert License Here",
-  "icon": "assets/abyssaldecor/icon.png",
+  "license": "GNU GPLv3",
+  "icon": "icon.png",
   "environment": "*",
   "entrypoints": {
     "main": [

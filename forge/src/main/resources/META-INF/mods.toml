@@ -1,17 +1,17 @@
 modLoader = "javafml"
 loaderVersion = "[47,)"
 #issueTrackerURL = ""
-license = "Insert License Here"
+license = "GNU GPLv3"
 
 [[mods]]
 modId = "abyssaldecor"
 version = "${version}"
 displayName = "Abyssal Decor"
-authors = "Me!"
+authors = ["Starrysock, Pixel Dream Studios"]
 description = '''
-This is an example description! Tell everyone what your mod is about!
+(Mostly) Vanilla style decorative blocks, (mostly) inspired by Victorian and Lovecraftian themes!
 '''
-#logoFile = ""
+logoFile = "icon.png"
 
 [[dependencies.abyssaldecor]]
 modId = "forge"
