@@ -24,6 +24,14 @@ public class BlockRegistry {
     public static final RegistrySupplier<BlockItem> AMMONITE_ITEM = BLOCK_ITEMS.register(AMMONITE_BLOCK.getId(), () -> new BlockItem(AMMONITE_BLOCK.get(), new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
     public static final RegistrySupplier<Block> YELLOW_WALLPAPER_BLOCK = BLOCKS.register("yellow_wallpaper", () -> new Block(BlockBehaviour.Properties.copy(Blocks.WHITE_WOOL)));
     public static final RegistrySupplier<BlockItem> YELLOW_WALLPAPER_ITEM = BLOCK_ITEMS.register(YELLOW_WALLPAPER_BLOCK.getId(), () -> new BlockItem(YELLOW_WALLPAPER_BLOCK.get(), new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
+    public static final RegistrySupplier<Block> SOLAR_ROD_BLOCK = BLOCKS.register("solar_rod", () -> new Block(BlockBehaviour.Properties.copy(Blocks.END_ROD)));
+    public static final RegistrySupplier<BlockItem> SOLAR_ROD_ITEM = BLOCK_ITEMS.register(SOLAR_ROD_BLOCK.getId(), () -> new BlockItem(SOLAR_ROD_BLOCK.get(), new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
+    public static final RegistrySupplier<Block> TERRESTRIAL_ROD_BLOCK = BLOCKS.register("terrestrial_rod", () -> new Block(BlockBehaviour.Properties.copy(Blocks.END_ROD)));
+    public static final RegistrySupplier<BlockItem> TERRESTRIAL_ROD_ITEM = BLOCK_ITEMS.register(TERRESTRIAL_ROD_BLOCK.getId(), () -> new BlockItem(TERRESTRIAL_ROD_BLOCK.get(), new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
+    public static final RegistrySupplier<Block> LUNAR_ROD_BLOCK = BLOCKS.register("lunar_rod", () -> new Block(BlockBehaviour.Properties.copy(Blocks.END_ROD)));
+    public static final RegistrySupplier<BlockItem> LUNAR_ROD_ITEM = BLOCK_ITEMS.register(LUNAR_ROD_BLOCK.getId(), () -> new BlockItem(LUNAR_ROD_BLOCK.get(), new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
+
+
 
     public static void init() {
         BLOCKS.register();
