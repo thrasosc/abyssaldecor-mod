@@ -30,6 +30,10 @@ public class BlockRegistry {
     public static final RegistrySupplier<BlockItem> TERRESTRIAL_ROD_ITEM = BLOCK_ITEMS.register(TERRESTRIAL_ROD_BLOCK.getId(), () -> new BlockItem(TERRESTRIAL_ROD_BLOCK.get(), new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
     public static final RegistrySupplier<Block> LUNAR_ROD_BLOCK = BLOCKS.register("lunar_rod", () -> new Block(BlockBehaviour.Properties.copy(Blocks.END_ROD)));
     public static final RegistrySupplier<BlockItem> LUNAR_ROD_ITEM = BLOCK_ITEMS.register(LUNAR_ROD_BLOCK.getId(), () -> new BlockItem(LUNAR_ROD_BLOCK.get(), new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
+    public static final RegistrySupplier<Block> ETHEREAL_ROD_BLOCK = BLOCKS.register("ethereal_rod", () -> new Block(BlockBehaviour.Properties.copy(Blocks.END_ROD)));
+    public static final RegistrySupplier<BlockItem> ETHEREAL_ROD_ITEM = BLOCK_ITEMS.register(ETHEREAL_ROD_BLOCK.getId(), () -> new BlockItem(ETHEREAL_ROD_BLOCK.get(), new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
+    public static final RegistrySupplier<Block> DAFFODIL_BLOCK = BLOCKS.register("daffodil", () -> new Block(BlockBehaviour.Properties.copy(Blocks.POPPY)));
+    public static final RegistrySupplier<BlockItem> DAFFODIL_ITEM = BLOCK_ITEMS.register(DAFFODIL_BLOCK.getId(), () -> new BlockItem(DAFFODIL_BLOCK.get(), new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
 
 
 
