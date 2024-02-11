@@ -24,5 +24,6 @@ public class AbyssalDecor {
         RenderTypeRegistry.register(RenderType.cutoutMipped(), BlockRegistry.STELLAR_ROD_BLOCK.get());
         RenderTypeRegistry.register(RenderType.cutoutMipped(), BlockRegistry.ASTER_BLOCK.get());
         RenderTypeRegistry.register(RenderType.cutoutMipped(), BlockRegistry.DAFFODIL_BLOCK.get());
+        RenderTypeRegistry.register(RenderType.cutoutMipped(), BlockRegistry.AMARANTH_BLOCK.get());
     }
 }

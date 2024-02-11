@@ -4,14 +4,13 @@ import dev.architectury.registry.registries.DeferredRegister;
 import dev.architectury.registry.registries.RegistrySupplier;
 import net.abyssaldecor.block.AbyssalLanternBlock;
 import net.abyssaldecor.block.AbyssalRodBlock;
+import net.abyssaldecor.block.AmaranthCropBlock;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.FlowerBlock;
-import net.minecraft.world.level.block.SlabBlock;
+import net.minecraft.world.item.ItemNameBlockItem;
+import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 
 import static net.abyssaldecor.AbyssalDecor.MOD_ID;
@@ -42,11 +41,14 @@ public class BlockRegistry {
     public static final RegistrySupplier<BlockItem> DAFFODIL_ITEM = BLOCK_ITEMS.register(DAFFODIL_BLOCK.getId(), () -> new BlockItem(DAFFODIL_BLOCK.get(), new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
     public static final RegistrySupplier<Block> ASTER_BLOCK = BLOCKS.register("aster", () -> new FlowerBlock(MobEffects.NIGHT_VISION, 5, BlockBehaviour.Properties.copy(Blocks.POPPY)));
     public static final RegistrySupplier<BlockItem> ASTER_ITEM = BLOCK_ITEMS.register(ASTER_BLOCK.getId(), () -> new BlockItem(ASTER_BLOCK.get(), new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
+    public static final RegistrySupplier<Block> AMARANTH_BLOCK = BLOCKS.register("amaranth", () -> new AmaranthCropBlock(BlockBehaviour.Properties.copy(Blocks.PITCHER_CROP)));
+    public static final RegistrySupplier<BlockItem> AMARANTH_SEEDS_ITEM = BLOCK_ITEMS.register("amaranth_seeds", () -> new ItemNameBlockItem(AMARANTH_BLOCK.get(), new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
     public static final RegistrySupplier<Block> BLACK_PEARL_BRICK_SLAB_BLOCK = BLOCKS.register("black_pearl_brick_slab", () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.BRICK_SLAB)));
     public static final RegistrySupplier<BlockItem> BLACK_PEARL_BRICK_SLAB_ITEM = BLOCK_ITEMS.register(BLACK_PEARL_BRICK_SLAB_BLOCK.getId(), () -> new BlockItem(BLACK_PEARL_BRICK_SLAB_BLOCK.get(), new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
     public static final RegistrySupplier<Block> BLACK_PEARL_BRICKS_BLOCK = BLOCKS.register("black_pearl_bricks", () -> new Block(BlockBehaviour.Properties.copy(Blocks.BRICKS)));
     public static final RegistrySupplier<BlockItem> BLACK_PEARL_BRICKS_ITEM = BLOCK_ITEMS.register(BLACK_PEARL_BRICKS_BLOCK.getId(), () -> new BlockItem(BLACK_PEARL_BRICKS_BLOCK.get(), new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
-
+    public static final RegistrySupplier<Block> BLACK_DOOR_BLOCK = BLOCKS.register("blackwood_door", () -> new Block(BlockBehaviour.Properties.copy(Blocks.BRICKS)));
+    public static final RegistrySupplier<BlockItem> BLACK_PEARL_BRICKS_ITEM = BLOCK_ITEMS.register(BLACK_PEARL_BRICKS_BLOCK.getId(), () -> new BlockItem(BLACK_PEARL_BRICKS_BLOCK.get(), new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
 
     public static void init() {
         BLOCKS.register();
