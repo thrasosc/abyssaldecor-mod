@@ -1,8 +1,9 @@
 {
-  "parent": "abyssaldecor:custom/terresrial_rod",
+  "parent": "abyssal_decor:custom/terresrial_rod",
   "textures": {
-    "all": "abyssaldecor:block/terrestrialrod",
-    "particle": "abyssaldecor:block/terrestrialrod",
-    "2": "abyssaldecor:block/terrestrialrod"
-  }
+    "all": "abyssal_decor:block/terrestrialrod",
+    "particle": "abyssal_decor:block/terrestrialrod",
+    "2": "abyssal_decor:block/terrestrialrod"
+  },
+  "render_type": "cutout_mipped"
 }

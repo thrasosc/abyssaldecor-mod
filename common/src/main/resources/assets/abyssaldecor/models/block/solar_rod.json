@@ -4,5 +4,6 @@
     "all": "abyssaldecor:block/solarrod",
     "particle": "abyssaldecor:block/solarrod",
     "1": "abyssaldecor:block/solarrod"
-  }
+  },
+  "render_type": "cutout_mipped"
 }

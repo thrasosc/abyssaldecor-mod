@@ -19,6 +19,9 @@
   "entrypoints": {
     "main": [
       "net.abyssaldecor.fabric.AbyssalDecorFabric"
+    ],
+    "client": [
+      "net.abyssaldecor.fabric.AbyssalDecorClientFabric"
     ]
   },
   "depends": {
