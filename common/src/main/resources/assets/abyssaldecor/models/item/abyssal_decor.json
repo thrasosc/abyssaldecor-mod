@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "abyssaldecor:item/abyssaldecor"
+    "layer0": "abyssaldecor:item/abyssal_decor"
   }
 }
