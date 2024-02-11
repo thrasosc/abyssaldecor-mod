@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "abyssal_decor:block/cut_pearl_block"
+      "model": "abyssaldecor:block/cut_pearl_block"
     }
   }
 }

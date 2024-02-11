@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "abyssal_decor:block/framed_pitchglass_top"
+      "model": "abyssaldecor:block/framed_pitchglass_top"
     }
   }
 }

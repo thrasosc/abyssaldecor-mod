@@ -1,18 +1,18 @@
 {
   "variants": {
     "facing=north": {
-      "model": "abyssal_decor:block/book_block"
+      "model": "abyssaldecor:block/book_block"
     },
     "facing=east": {
-      "model": "abyssal_decor:block/book_block",
+      "model": "abyssaldecor:block/book_block",
       "y": 90
     },
     "facing=south": {
-      "model": "abyssal_decor:block/book_block",
+      "model": "abyssaldecor:block/book_block",
       "y": 180
     },
     "facing=west": {
-      "model": "abyssal_decor:block/book_block",
+      "model": "abyssaldecor:block/book_block",
       "y": 270
     }
   }

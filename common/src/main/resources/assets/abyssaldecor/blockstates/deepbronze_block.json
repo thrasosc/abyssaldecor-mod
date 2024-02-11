@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "abyssal_decor:block/deepbronze_block"
+      "model": "abyssaldecor:block/deepbronze_block"
     }
   }
 }

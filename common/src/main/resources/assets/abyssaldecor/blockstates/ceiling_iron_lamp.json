@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "abyssal_decor:block/ceiling_iron_lamp"
+      "model": "abyssaldecor:block/ceiling_iron_lamp"
     }
   }
 }

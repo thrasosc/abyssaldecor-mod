@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "abyssal_decor:block/porous_mold"
+      "model": "abyssaldecor:block/porous_mold"
     }
   }
 }

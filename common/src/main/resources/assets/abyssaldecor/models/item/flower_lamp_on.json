@@ -1,5 +1,5 @@
 {
-  "parent": "abyssal_decor:block/flower_lamp_on",
+  "parent": "abyssaldecor:block/flower_lamp_on",
   "display": {
     "thirdperson": {
       "rotation": [

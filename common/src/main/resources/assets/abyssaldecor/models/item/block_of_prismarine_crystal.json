@@ -1,5 +1,5 @@
 {
-  "parent": "abyssal_decor:block/block_of_prismarine_crystal",
+  "parent": "abyssaldecor:block/block_of_prismarine_crystal",
   "display": {
     "thirdperson": {
       "rotation": [

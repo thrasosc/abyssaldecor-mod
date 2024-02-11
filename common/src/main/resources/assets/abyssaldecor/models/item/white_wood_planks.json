@@ -1,5 +1,5 @@
 {
-  "parent": "abyssal_decor:block/white_wood_planks",
+  "parent": "abyssaldecor:block/white_wood_planks",
   "display": {
     "thirdperson": {
       "rotation": [

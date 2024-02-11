@@ -1,15 +1,15 @@
 {
   "variants": {
     "axis=x": {
-      "model": "abyssal_decor:block/pearly_glass_block_blackwood",
+      "model": "abyssaldecor:block/pearly_glass_block_blackwood",
       "x": 90,
       "y": 90
     },
     "axis=y": {
-      "model": "abyssal_decor:block/pearly_glass_block_blackwood"
+      "model": "abyssaldecor:block/pearly_glass_block_blackwood"
     },
     "axis=z": {
-      "model": "abyssal_decor:block/pearly_glass_block_blackwood",
+      "model": "abyssaldecor:block/pearly_glass_block_blackwood",
       "x": 90
     }
   }

@@ -1,5 +1,5 @@
 {
-  "parent": "abyssal_decor:block/fresnel_lamp",
+  "parent": "abyssaldecor:block/fresnel_lamp",
   "display": {
     "thirdperson": {
       "rotation": [

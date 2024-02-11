@@ -1,5 +1,5 @@
 {
-  "parent": "abyssal_decor:block/wooden_dragon_head",
+  "parent": "abyssaldecor:block/wooden_dragon_head",
   "display": {
     "thirdperson": {
       "rotation": [

@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "abyssal_decor:block/effervescent_tiles"
+      "model": "abyssaldecor:block/effervescent_tiles"
     }
   }
 }

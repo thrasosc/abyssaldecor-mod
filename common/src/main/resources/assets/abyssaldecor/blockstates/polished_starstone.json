@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "abyssal_decor:block/polished_starstone"
+      "model": "abyssaldecor:block/polished_starstone"
     }
   }
 }

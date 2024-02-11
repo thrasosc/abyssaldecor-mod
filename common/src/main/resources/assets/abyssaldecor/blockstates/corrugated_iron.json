@@ -1,15 +1,15 @@
 {
   "variants": {
     "axis=x": {
-      "model": "abyssal_decor:block/corrugated_iron",
+      "model": "abyssaldecor:block/corrugated_iron",
       "x": 90,
       "y": 90
     },
     "axis=y": {
-      "model": "abyssal_decor:block/corrugated_iron"
+      "model": "abyssaldecor:block/corrugated_iron"
     },
     "axis=z": {
-      "model": "abyssal_decor:block/corrugated_iron",
+      "model": "abyssaldecor:block/corrugated_iron",
       "x": 90
     }
   }

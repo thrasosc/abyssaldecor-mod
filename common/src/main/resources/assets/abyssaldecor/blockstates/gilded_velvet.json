@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "abyssal_decor:block/gilded_velvet"
+      "model": "abyssaldecor:block/gilded_velvet"
     }
   }
 }

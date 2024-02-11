@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "abyssal_decor:block/fresnel_lamp"
+      "model": "abyssaldecor:block/fresnel_lamp"
     }
   }
 }

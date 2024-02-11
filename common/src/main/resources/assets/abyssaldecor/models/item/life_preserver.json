@@ -1,5 +1,5 @@
 {
-  "parent": "abyssal_decor:block/life_preserver",
+  "parent": "abyssaldecor:block/life_preserver",
   "display": {
     "thirdperson": {
       "rotation": [

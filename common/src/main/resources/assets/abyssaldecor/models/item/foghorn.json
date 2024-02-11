@@ -1,5 +1,5 @@
 {
-  "parent": "abyssal_decor:block/foghorn",
+  "parent": "abyssaldecor:block/foghorn",
   "display": {
     "thirdperson": {
       "rotation": [

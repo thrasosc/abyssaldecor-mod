@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "abyssal_decor:block/blood_lantern"
+      "model": "abyssaldecor:block/blood_lantern"
     }
   }
 }

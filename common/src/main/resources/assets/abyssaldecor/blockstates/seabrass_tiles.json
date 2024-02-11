@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "abyssal_decor:block/seabrass_tiles"
+      "model": "abyssaldecor:block/seabrass_tiles"
     }
   }
 }

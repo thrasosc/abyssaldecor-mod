@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "abyssal_decor:block/moldy_starstone"
+      "model": "abyssaldecor:block/moldy_starstone"
     }
   }
 }

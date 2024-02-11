@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "abyssal_decor:block/paper_stack"
+      "model": "abyssaldecor:block/paper_stack"
     }
   }
 }

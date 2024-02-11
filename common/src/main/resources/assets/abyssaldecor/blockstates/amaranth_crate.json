@@ -1,5 +1,7 @@
 {
   "variants": {
-    "": { "model": "abyssaldecor:block/amaranth_crate" }
+    "": {
+      "model": "abyssaldecor:block/amaranth_crate"
+    }
   }
 }

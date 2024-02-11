@@ -1,5 +1,5 @@
 {
-  "parent": "abyssal_decor:block/desk_bell",
+  "parent": "abyssaldecor:block/desk_bell",
   "display": {
     "thirdperson": {
       "rotation": [

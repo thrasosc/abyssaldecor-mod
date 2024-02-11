@@ -1,15 +1,15 @@
 {
   "variants": {
     "axis=x": {
-      "model": "abyssal_decor:block/cut_cinnamon_log",
+      "model": "abyssaldecor:block/cut_cinnamon_log",
       "x": 90,
       "y": 90
     },
     "axis=y": {
-      "model": "abyssal_decor:block/cut_cinnamon_log"
+      "model": "abyssaldecor:block/cut_cinnamon_log"
     },
     "axis=z": {
-      "model": "abyssal_decor:block/cut_cinnamon_log",
+      "model": "abyssaldecor:block/cut_cinnamon_log",
       "x": 90
     }
   }

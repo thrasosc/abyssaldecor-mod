@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "abyssal_decor:block/floor_quartz_lamp"
+      "model": "abyssaldecor:block/floor_quartz_lamp"
     }
   }
 }

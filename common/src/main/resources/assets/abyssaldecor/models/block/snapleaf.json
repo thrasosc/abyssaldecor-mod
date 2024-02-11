@@ -1,10 +1,10 @@
 {
-  "parent": "abyssal_decor:custom/venusflytrap",
+  "parent": "abyssaldecor:custom/venusflytrap",
   "textures": {
-    "all": "abyssal_decor:block/venusflytrap",
-    "particle": "abyssal_decor:block/venusflytrap",
-    "1": "abyssal_decor:block/venusflytrap",
-    "2": "abyssal_decor:block/venusflytrapopen"
+    "all": "abyssaldecor:block/venusflytrap",
+    "particle": "abyssaldecor:block/venusflytrap",
+    "1": "abyssaldecor:block/venusflytrap",
+    "2": "abyssaldecor:block/venusflytrapopen"
   },
   "render_type": "cutout"
 }

@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "abyssal_decor:block/iron_panel"
+      "model": "abyssaldecor:block/iron_panel"
     }
   }
 }

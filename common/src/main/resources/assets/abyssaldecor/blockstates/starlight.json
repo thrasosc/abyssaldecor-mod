@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "abyssal_decor:block/starlight"
+      "model": "abyssaldecor:block/starlight"
     }
   }
 }

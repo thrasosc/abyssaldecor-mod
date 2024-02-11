@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "abyssal_decor:block/blackwood_planks"
+      "model": "abyssaldecor:block/blackwood_planks"
     }
   }
 }

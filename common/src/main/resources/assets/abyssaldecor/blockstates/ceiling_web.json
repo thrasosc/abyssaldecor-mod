@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "abyssal_decor:block/ceiling_web"
+      "model": "abyssaldecor:block/ceiling_web"
     }
   }
 }

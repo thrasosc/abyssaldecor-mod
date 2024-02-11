@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "abyssal_decor:block/iron_duct"
+      "model": "abyssaldecor:block/iron_duct"
     }
   }
 }

@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "abyssal_decor:block/crystalized_glowstone"
+      "model": "abyssaldecor:block/crystalized_glowstone"
     }
   }
 }

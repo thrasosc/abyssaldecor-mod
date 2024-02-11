@@ -1,5 +1,5 @@
 {
-  "parent": "abyssal_decor:block/blaze_lamp_on",
+  "parent": "abyssaldecor:block/blaze_lamp_on",
   "display": {
     "thirdperson": {
       "rotation": [

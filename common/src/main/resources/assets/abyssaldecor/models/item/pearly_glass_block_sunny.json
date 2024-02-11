@@ -1,5 +1,5 @@
 {
-  "parent": "abyssal_decor:block/pearly_glass_block_sunny",
+  "parent": "abyssaldecor:block/pearly_glass_block_sunny",
   "display": {
     "thirdperson": {
       "rotation": [

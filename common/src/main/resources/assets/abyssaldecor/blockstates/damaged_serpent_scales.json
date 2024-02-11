@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "abyssal_decor:block/damaged_serpent_scales"
+      "model": "abyssaldecor:block/damaged_serpent_scales"
     }
   }
 }

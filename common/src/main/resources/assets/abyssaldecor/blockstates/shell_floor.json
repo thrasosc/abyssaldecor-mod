@@ -1,18 +1,18 @@
 {
   "variants": {
     "facing=north": {
-      "model": "abyssal_decor:block/shell_floor"
+      "model": "abyssaldecor:block/shell_floor"
     },
     "facing=east": {
-      "model": "abyssal_decor:block/shell_floor",
+      "model": "abyssaldecor:block/shell_floor",
       "y": 90
     },
     "facing=south": {
-      "model": "abyssal_decor:block/shell_floor",
+      "model": "abyssaldecor:block/shell_floor",
       "y": 180
     },
     "facing=west": {
-      "model": "abyssal_decor:block/shell_floor",
+      "model": "abyssaldecor:block/shell_floor",
       "y": 270
     }
   }

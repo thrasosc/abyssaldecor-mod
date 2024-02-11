@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "abyssal_decor:block/jade_lantern_off"
+      "model": "abyssaldecor:block/jade_lantern_off"
     }
   }
 }

@@ -1,15 +1,15 @@
 {
   "variants": {
     "axis=x": {
-      "model": "abyssal_decor:block/deepbronze_chain",
+      "model": "abyssaldecor:block/deepbronze_chain",
       "x": 90,
       "y": 90
     },
     "axis=y": {
-      "model": "abyssal_decor:block/deepbronze_chain"
+      "model": "abyssaldecor:block/deepbronze_chain"
     },
     "axis=z": {
-      "model": "abyssal_decor:block/deepbronze_chain",
+      "model": "abyssaldecor:block/deepbronze_chain",
       "x": 90
     }
   }

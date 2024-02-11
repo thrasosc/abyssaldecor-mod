@@ -1,13 +1,13 @@
 {
   "variants": {
     "type=bottom": {
-      "model": "abyssal_decor:block/iron_panel_slab"
+      "model": "abyssaldecor:block/iron_panel_slab"
     },
     "type=top": {
-      "model": "abyssal_decor:block/iron_panel_slab_top"
+      "model": "abyssaldecor:block/iron_panel_slab_top"
     },
     "type=double": {
-      "model": "abyssal_decor:block/iron_panel_slab_full"
+      "model": "abyssaldecor:block/iron_panel_slab_full"
     }
   }
 }

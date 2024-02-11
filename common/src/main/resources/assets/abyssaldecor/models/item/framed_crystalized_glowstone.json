@@ -1,5 +1,5 @@
 {
-  "parent": "abyssal_decor:block/framed_crystalized_glowstone",
+  "parent": "abyssaldecor:block/framed_crystalized_glowstone",
   "display": {
     "thirdperson": {
       "rotation": [

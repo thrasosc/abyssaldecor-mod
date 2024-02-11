@@ -1,5 +1,5 @@
 {
-  "parent": "abyssal_decor:block/frosted_ceiling_lamp",
+  "parent": "abyssaldecor:block/frosted_ceiling_lamp",
   "display": {
     "thirdperson": {
       "rotation": [

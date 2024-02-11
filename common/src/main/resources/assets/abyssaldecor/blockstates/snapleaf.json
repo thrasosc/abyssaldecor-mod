@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "abyssal_decor:block/snapleaf"
+      "model": "abyssaldecor:block/snapleaf"
     }
   }
 }

@@ -1,5 +1,5 @@
 {
-  "parent": "abyssal_decor:block/wooden_frog",
+  "parent": "abyssaldecor:block/wooden_frog",
   "display": {
     "thirdperson": {
       "rotation": [

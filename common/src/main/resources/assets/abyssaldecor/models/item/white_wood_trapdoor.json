@@ -1,5 +1,5 @@
 {
-  "parent": "abyssal_decor:block/white_wood_trapdoor",
+  "parent": "abyssaldecor:block/white_wood_trapdoor",
   "display": {
     "thirdperson": {
       "rotation": [

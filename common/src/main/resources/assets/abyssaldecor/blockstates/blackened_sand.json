@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "abyssal_decor:block/blackened_sand"
+      "model": "abyssaldecor:block/blackened_sand"
     }
   }
 }

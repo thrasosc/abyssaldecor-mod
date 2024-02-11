@@ -1,18 +1,18 @@
 {
   "variants": {
     "facing=north": {
-      "model": "abyssal_decor:block/wall_bulb_lamp_lit"
+      "model": "abyssaldecor:block/wall_bulb_lamp_lit"
     },
     "facing=east": {
-      "model": "abyssal_decor:block/wall_bulb_lamp_lit",
+      "model": "abyssaldecor:block/wall_bulb_lamp_lit",
       "y": 90
     },
     "facing=south": {
-      "model": "abyssal_decor:block/wall_bulb_lamp_lit",
+      "model": "abyssaldecor:block/wall_bulb_lamp_lit",
       "y": 180
     },
     "facing=west": {
-      "model": "abyssal_decor:block/wall_bulb_lamp_lit",
+      "model": "abyssaldecor:block/wall_bulb_lamp_lit",
       "y": 270
     }
   }

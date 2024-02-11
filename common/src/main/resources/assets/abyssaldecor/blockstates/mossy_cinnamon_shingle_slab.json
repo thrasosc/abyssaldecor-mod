@@ -1,13 +1,13 @@
 {
   "variants": {
     "type=bottom": {
-      "model": "abyssal_decor:block/mossy_cinnamon_shingle_slab"
+      "model": "abyssaldecor:block/mossy_cinnamon_shingle_slab"
     },
     "type=top": {
-      "model": "abyssal_decor:block/mossy_cinnamon_shingle_slab_top"
+      "model": "abyssaldecor:block/mossy_cinnamon_shingle_slab_top"
     },
     "type=double": {
-      "model": "abyssal_decor:block/mossy_cinnamon_shingle_slab_full"
+      "model": "abyssaldecor:block/mossy_cinnamon_shingle_slab_full"
     }
   }
 }

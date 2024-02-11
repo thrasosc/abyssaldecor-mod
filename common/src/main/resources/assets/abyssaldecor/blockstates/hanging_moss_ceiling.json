@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "abyssal_decor:block/hanging_moss_ceiling"
+      "model": "abyssaldecor:block/hanging_moss_ceiling"
     }
   }
 }

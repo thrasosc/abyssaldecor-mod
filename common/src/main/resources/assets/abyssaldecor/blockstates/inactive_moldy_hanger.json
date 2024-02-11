@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "abyssal_decor:block/inactive_moldy_hanger"
+      "model": "abyssaldecor:block/inactive_moldy_hanger"
     }
   }
 }

@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "abyssal_decor:block/brick_mosaic"
+      "model": "abyssaldecor:block/brick_mosaic"
     }
   }
 }
