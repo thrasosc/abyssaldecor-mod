@@ -12,6 +12,7 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemNameBlockItem;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.state.properties.BlockSetType;
 
 import static net.abyssaldecor.AbyssalDecor.MOD_ID;
 import static net.abyssaldecor.registry.ItemGroupRegistry.ABYSSALDECOR_TAB;
@@ -47,8 +48,8 @@ public class BlockRegistry {
     public static final RegistrySupplier<BlockItem> BLACK_PEARL_BRICK_SLAB_ITEM = BLOCK_ITEMS.register(BLACK_PEARL_BRICK_SLAB_BLOCK.getId(), () -> new BlockItem(BLACK_PEARL_BRICK_SLAB_BLOCK.get(), new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
     public static final RegistrySupplier<Block> BLACK_PEARL_BRICKS_BLOCK = BLOCKS.register("black_pearl_bricks", () -> new Block(BlockBehaviour.Properties.copy(Blocks.BRICKS)));
     public static final RegistrySupplier<BlockItem> BLACK_PEARL_BRICKS_ITEM = BLOCK_ITEMS.register(BLACK_PEARL_BRICKS_BLOCK.getId(), () -> new BlockItem(BLACK_PEARL_BRICKS_BLOCK.get(), new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
-    public static final RegistrySupplier<Block> BLACK_DOOR_BLOCK = BLOCKS.register("blackwood_door", () -> new Block(BlockBehaviour.Properties.copy(Blocks.BRICKS)));
-    public static final RegistrySupplier<BlockItem> BLACK_PEARL_BRICKS_ITEM = BLOCK_ITEMS.register(BLACK_PEARL_BRICKS_BLOCK.getId(), () -> new BlockItem(BLACK_PEARL_BRICKS_BLOCK.get(), new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
+    public static final RegistrySupplier<Block> BLACKWOOD_DOOR_BLOCK = BLOCKS.register("blackwood_door", () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.DARK_OAK_DOOR), BlockSetType.DARK_OAK));
+    public static final RegistrySupplier<BlockItem> BLACKWOOD_DOOR_ITEM = BLOCK_ITEMS.register("blackwood_door", () -> new BlockItem(BLACKWOOD_DOOR_BLOCK.get(), new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
 
     public static void init() {
         BLOCKS.register();
