@@ -7,7 +7,7 @@
       "model": "abyssaldecor:block/black_pearl_brick_slab_top"
     },
     "type=double": {
-      "model": "abyssaldecor:block/black_pearl_brick_slab_full"
+      "model": "abyssaldecor:block/black_pearl_bricks"
     }
   }
 }
