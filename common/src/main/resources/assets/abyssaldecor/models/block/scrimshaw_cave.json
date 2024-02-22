@@ -5,6 +5,5 @@
     "particle": "abyssaldecor:block/scrimshawpt2",
     "0": "abyssaldecor:block/scrimshawpt1",
     "1": "abyssaldecor:block/scrimshawpt2"
-  },
-  "render_type": "cutout_mipped"
+  }
 }

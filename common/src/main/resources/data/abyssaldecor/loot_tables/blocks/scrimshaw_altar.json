@@ -1,0 +1,45 @@
+{
+  "type": "abyssaldecor:block",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "abyssaldecor:alternatives",
+          "children": [
+            {
+              "type": "abyssaldecor:item",
+              "conditions": [
+                {
+                  "condition": "abyssaldecor:match_tool",
+                  "predicate": {
+                    "enchantments": [
+                      {
+                        "enchantment": "abyssaldecor:silk_touch",
+                        "levels": {
+                          "min": 1
+                        }
+                      }
+                    ]
+                  }
+                }
+              ],
+              "name": "abyssaldecor:scrimshaw_altar"
+            },
+            {
+              "type": "abyssaldecor:item",
+              "conditions": [
+                {
+                  "condition": "abyssaldecor:survives_explosion"
+                }
+              ],
+              "name": "abyssaldecor:cobblescrimshaw_altar"
+            }
+          ]
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "abyssaldecor:blocks/scrimshaw_altar"
+}

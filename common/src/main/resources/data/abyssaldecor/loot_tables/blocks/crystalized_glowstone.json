@@ -1,0 +1,31 @@
+{
+  "type": "abyssaldecor:block",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "conditions": [
+        {
+          "condition": "abyssaldecor:match_tool",
+          "predicate": {
+            "enchantments": [
+              {
+                "enchantment": "abyssaldecor:silk_touch",
+                "levels": {
+                  "min": 1
+                }
+              }
+            ]
+          }
+        }
+      ],
+      "entries": [
+        {
+          "type": "abyssaldecor:item",
+          "name": "abyssaldecor:glass"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "abyssaldecor:blocks/glass"
+}

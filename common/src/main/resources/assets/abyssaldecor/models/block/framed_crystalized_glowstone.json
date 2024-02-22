@@ -1,8 +1,7 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all": "abyssaldecor:block/framedglowstonepane",
-    "particle": "abyssaldecor:block/framedglowstonepane"
+    "all": "abyssaldecor:block/framedglowstonepane"
   },
   "render_type": "translucent"
 }

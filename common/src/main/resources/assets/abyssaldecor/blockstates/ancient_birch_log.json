@@ -1,16 +1,7 @@
 {
   "variants": {
-    "axis=x": {
-      "model": "abyssaldecor:block/ancient_birch_log",
-      "x": 90,
-      "y": 90
-    },
-    "axis=y": {
+    "": {
       "model": "abyssaldecor:block/ancient_birch_log"
-    },
-    "axis=z": {
-      "model": "abyssaldecor:block/ancient_birch_log",
-      "x": 90
     }
   }
 }

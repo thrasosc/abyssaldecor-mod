@@ -1,13 +1,7 @@
 {
-  "parent": "block/cube",
+  "parent": "block/cube_column",
   "textures": {
-    "down": "abyssaldecor:block/ancient_birch_log_bottom",
-    "up": "abyssaldecor:block/ancient_birch_log_bottom",
-    "north": "abyssaldecor:block/ancient_birch_log",
-    "east": "abyssaldecor:block/ancient_birch_log",
-    "south": "abyssaldecor:block/ancient_birch_log",
-    "west": "abyssaldecor:block/ancient_birch_log",
-    "particle": "abyssaldecor:block/ancient_birch_log_bottom"
-  },
-  "render_type": "solid"
+    "end": "abyssaldecor:block/ancient_birch_log_bottom",
+    "side": "abyssaldecor:block/ancient_birch_log"
+  }
 }
