@@ -1,16 +1,8 @@
 {
   "variants": {
-    "axis=x": {
-      "model": "abyssaldecor:block/pearly_glass_block_azure",
-      "x": 90,
-      "y": 90
-    },
-    "axis=y": {
+    "": {
       "model": "abyssaldecor:block/pearly_glass_block_azure"
-    },
-    "axis=z": {
-      "model": "abyssaldecor:block/pearly_glass_block_azure",
-      "x": 90
     }
   }
 }
+

@@ -66,6 +66,22 @@ public class BlockRegistry {
     public static final RegistrySupplier<Block> FRAMED_CRYSTALIZED_GLOWSTONE_BLOCK = BLOCKS.register("framed_crystalized_glowstone", () -> new Block(BlockBehaviour.Properties.copy(Blocks.GLASS)));
     public static final RegistrySupplier<BlockItem> FRAMED_CRYSTALIZED_GLOWSTONE_ITEM = BLOCK_ITEMS.register(FRAMED_CRYSTALIZED_GLOWSTONE_BLOCK.getId(), () -> new BlockItem(FRAMED_CRYSTALIZED_GLOWSTONE_BLOCK.get(), new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
 
+    public static final RegistrySupplier<Block> SUNNY_PEARLY_GLASS_BLOCK = BLOCKS.register("pearly_glass_block_sunny", () -> new Block(BlockBehaviour.Properties.copy(Blocks.GLASS)));
+    public static final RegistrySupplier<BlockItem> SUNNY_PEARLY_GLASS_ITEM = BLOCK_ITEMS.register(SUNNY_PEARLY_GLASS_BLOCK.getId(), () -> new BlockItem(SUNNY_PEARLY_GLASS_BLOCK.get(), new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
+
+    public static final RegistrySupplier<Block> AZURE_PEARLY_GLASS_BLOCK = BLOCKS.register("pearly_glass_block_azure", () -> new Block(BlockBehaviour.Properties.copy(Blocks.GLASS)));
+    public static final RegistrySupplier<BlockItem> AZURE_PEARLY_GLASS_ITEM = BLOCK_ITEMS.register(AZURE_PEARLY_GLASS_BLOCK.getId(), () -> new BlockItem(AZURE_PEARLY_GLASS_BLOCK.get(), new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
+
+    public static final RegistrySupplier<Block> VERDANT_PEARLY_GLASS_BLOCK = BLOCKS.register("pearly_glass_block_verdant", () -> new Block(BlockBehaviour.Properties.copy(Blocks.GLASS)));
+    public static final RegistrySupplier<BlockItem> VERDANT_PEARLY_GLASS_ITEM = BLOCK_ITEMS.register(VERDANT_PEARLY_GLASS_BLOCK.getId(), () -> new BlockItem(VERDANT_PEARLY_GLASS_BLOCK.get(), new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
+
+    public static final RegistrySupplier<Block> WHITEWOOD_PEARLY_GLASS_BLOCK = BLOCKS.register("pearly_glass_block_whitewood", () -> new Block(BlockBehaviour.Properties.copy(Blocks.GLASS)));
+    public static final RegistrySupplier<BlockItem> WHITEWOOD_PEARLY_GLASS_ITEM = BLOCK_ITEMS.register(WHITEWOOD_PEARLY_GLASS_BLOCK.getId(), () -> new BlockItem(WHITEWOOD_PEARLY_GLASS_BLOCK.get(), new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
+
+    public static final RegistrySupplier<Block> BLACKWOOD_PEARLY_GLASS_BLOCK = BLOCKS.register("pearly_glass_block_blackwood", () -> new Block(BlockBehaviour.Properties.copy(Blocks.GLASS)));
+    public static final RegistrySupplier<BlockItem> BLACKWOOD_PEARLY_GLASS_ITEM = BLOCK_ITEMS.register(BLACKWOOD_PEARLY_GLASS_BLOCK.getId(), () -> new BlockItem(BLACKWOOD_PEARLY_GLASS_BLOCK.get(), new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
+
+
     public static void init() {
         BLOCKS.register();
         BLOCK_ITEMS.register();
