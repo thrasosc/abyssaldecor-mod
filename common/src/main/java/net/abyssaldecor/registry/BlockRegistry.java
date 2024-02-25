@@ -2,9 +2,7 @@ package net.abyssaldecor.registry;
 
 import dev.architectury.registry.registries.DeferredRegister;
 import dev.architectury.registry.registries.RegistrySupplier;
-import net.abyssaldecor.block.AbyssalLanternBlock;
-import net.abyssaldecor.block.AbyssalRodBlock;
-import net.abyssaldecor.block.AmaranthCropBlock;
+import net.abyssaldecor.block.*;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.item.BlockItem;
@@ -52,9 +50,9 @@ public class BlockRegistry {
     public static final RegistrySupplier<BlockItem> BLACKWOOD_DOOR_ITEM = BLOCK_ITEMS.register(BLACKWOOD_DOOR_BLOCK.getId(), () -> new BlockItem(BLACKWOOD_DOOR_BLOCK.get(), new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
     public static final RegistrySupplier<Block> ANCIENT_BIRCH_LOG_BLOCK = BLOCKS.register("ancient_birch_log", () -> new Block(BlockBehaviour.Properties.copy(Blocks.BIRCH_PLANKS)));
     public static final RegistrySupplier<BlockItem> ANCIENT_BIRCH_LOG_ITEM = BLOCK_ITEMS.register(ANCIENT_BIRCH_LOG_BLOCK.getId(), () -> new BlockItem(ANCIENT_BIRCH_LOG_BLOCK.get(), new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
-    public static final RegistrySupplier<Block> SCRIMSHAW_BLOCK = BLOCKS.register("scrimshaw_cave", () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE)));
+    public static final RegistrySupplier<Block> SCRIMSHAW_BLOCK = BLOCKS.register("scrimshaw_cave", () -> new ScrimshawBlock(BlockBehaviour.Properties.copy(Blocks.STONE)));
     public static final RegistrySupplier<BlockItem> SCRIMSHAW_ITEM = BLOCK_ITEMS.register(SCRIMSHAW_BLOCK.getId(), () -> new BlockItem(SCRIMSHAW_BLOCK.get(), new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
-    public static final RegistrySupplier<Block> SCRIMSHAW_ALTAR_BLOCK = BLOCKS.register("scrimshaw_altar", () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE)));
+    public static final RegistrySupplier<Block> SCRIMSHAW_ALTAR_BLOCK = BLOCKS.register("scrimshaw_altar", () -> new ScrimshawAltarBlock(BlockBehaviour.Properties.copy(Blocks.STONE)));
     public static final RegistrySupplier<BlockItem> SCRIMSHAW_ALTAR_ITEM = BLOCK_ITEMS.register(SCRIMSHAW_ALTAR_BLOCK.getId(), () -> new BlockItem(SCRIMSHAW_ALTAR_BLOCK.get(), new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
     public static final RegistrySupplier<Block> PRISMARINE_CRYSTAL_BLOCK = BLOCKS.register("block_of_prismarine_crystal", () -> new Block(BlockBehaviour.Properties.copy(Blocks.GLASS)));
     public static final RegistrySupplier<BlockItem> PRISMARINE_CRYSTAL_ITEM = BLOCK_ITEMS.register(PRISMARINE_CRYSTAL_BLOCK.getId(), () -> new BlockItem(PRISMARINE_CRYSTAL_BLOCK.get(), new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
