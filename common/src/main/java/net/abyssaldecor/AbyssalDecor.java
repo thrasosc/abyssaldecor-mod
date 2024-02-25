@@ -1,7 +1,6 @@
 package net.abyssaldecor;
 
 import dev.architectury.registry.client.rendering.RenderTypeRegistry;
-import mod.azure.azurelib.AzureLib;
 import net.abyssaldecor.registry.BlockRegistry;
 import net.abyssaldecor.registry.ItemGroupRegistry;
 import net.abyssaldecor.registry.ItemRegistry;
@@ -11,7 +10,7 @@ public class AbyssalDecor {
     public static final String MOD_ID = "abyssaldecor";
 
     public static void init() {
-        AzureLib.initialize();
+//        AzureLib.initialize();
         System.out.println(ExampleExpectPlatform.getConfigDirectory().toAbsolutePath().normalize().toString());
         ItemGroupRegistry.init();
         ItemRegistry.init();
@@ -27,7 +26,7 @@ public class AbyssalDecor {
         RenderTypeRegistry.register(RenderType.cutoutMipped(), BlockRegistry.ASTER_BLOCK.get());
         RenderTypeRegistry.register(RenderType.cutoutMipped(), BlockRegistry.DAFFODIL_BLOCK.get());
         RenderTypeRegistry.register(RenderType.cutoutMipped(), BlockRegistry.AMARANTH_BLOCK.get());
-        RenderTypeRegistry.register(RenderType.cutoutMipped(), BlockRegistry.SCRIMSHAW_BLOCK.get());
-        RenderTypeRegistry.register(RenderType.cutoutMipped(), BlockRegistry.SCRIMSHAW_ALTAR_BLOCK.get());
+//        RenderTypeRegistry.register(RenderType.cutoutMipped(), BlockRegistry.SCRIMSHAW_BLOCK.get());
+//        RenderTypeRegistry.register(RenderType.cutoutMipped(), BlockRegistry.SCRIMSHAW_ALTAR_BLOCK.get());
     }
 }
