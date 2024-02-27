@@ -13,7 +13,6 @@ public class ItemRegistry {
     public static final RegistrySupplier<Item> ABYSSAL_DECOR = ITEMS.register("abyssal_decor", () -> new Item(new Item.Properties()));
     public static final RegistrySupplier<Item> AMARANTH_PINNACLE = ITEMS.register("amaranth_pinnacle", () -> new Item(new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
     public static final RegistrySupplier<Item> BLACK_PEARL = ITEMS.register("black_pearl", () -> new Item(new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
-    public static final RegistrySupplier<Item> BLACK_PEARL_MEAL = ITEMS.register("black_pearl_meal", () -> new Item(new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
     public static final RegistrySupplier<Item> BLOOD_CORAL_BUD = ITEMS.register("blood_coral_bud", () -> new Item(new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
     public static final RegistrySupplier<Item> BLOOD_CORAL_DOOR = ITEMS.register("blood_coral_door", () -> new Item(new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
     public static final RegistrySupplier<Item> BOG_APPLE_LEAVES = ITEMS.register("bog_apple_leaves", () -> new Item(new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
