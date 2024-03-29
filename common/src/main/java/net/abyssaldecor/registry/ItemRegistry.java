@@ -77,7 +77,6 @@ public class ItemRegistry {
     public static final RegistrySupplier<Item> STARLIGHT = ITEMS.register("starlight", () -> new Item(new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
     public static final RegistrySupplier<Item> TELESCOPE_BOTTOM = ITEMS.register("telescope_bottom", () -> new Item(new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
     public static final RegistrySupplier<Item> VELVET_BARRIER_BASE = ITEMS.register("velvet_barrier_base", () -> new Item(new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
-    public static final RegistrySupplier<Item> SNAPLEAF = ITEMS.register("snapleaf", () -> new Item(new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
     public static final RegistrySupplier<Item> WHITE_PEARL = ITEMS.register("white_pearl", () -> new Item(new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
     public static final RegistrySupplier<Item> WHITE_PEARL_BAR_DOOR = ITEMS.register("white_pearl_bar_door", () -> new Item(new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
     public static final RegistrySupplier<Item> WHITE_PEARLMEAL = ITEMS.register("white_pearlmeal", () -> new Item(new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));

@@ -28,5 +28,6 @@ public class AbyssalDecor {
         RenderTypeRegistry.register(RenderType.cutoutMipped(), BlockRegistry.AMARANTH_BLOCK.get());
         RenderTypeRegistry.register(RenderType.cutoutMipped(), BlockRegistry.SCRIMSHAW_BLOCK.get());
         RenderTypeRegistry.register(RenderType.cutoutMipped(), BlockRegistry.SCRIMSHAW_ALTAR_BLOCK.get());
+        RenderTypeRegistry.register(RenderType.cutoutMipped(), BlockRegistry.SNAPLEAF_BLOCK.get());
     }
 }
