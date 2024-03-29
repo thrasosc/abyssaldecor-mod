@@ -79,6 +79,8 @@ public class BlockRegistry {
     public static final RegistrySupplier<Block> BLACKWOOD_PEARLY_GLASS_BLOCK = BLOCKS.register("pearly_glass_block_blackwood", () -> new Block(BlockBehaviour.Properties.copy(Blocks.GLASS)));
     public static final RegistrySupplier<BlockItem> BLACKWOOD_PEARLY_GLASS_ITEM = BLOCK_ITEMS.register(BLACKWOOD_PEARLY_GLASS_BLOCK.getId(), () -> new BlockItem(BLACKWOOD_PEARLY_GLASS_BLOCK.get(), new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
 
+    public static final RegistrySupplier<Block> SNAPLEAF_BLOCK = BLOCKS.register("snapleaf", () -> new FlowerBlock(MobEffects.NIGHT_VISION, 5, BlockBehaviour.Properties.copy(Blocks.POPPY)));
+    public static final RegistrySupplier<BlockItem> SNAPLEAF_ITEM = BLOCK_ITEMS.register(SNAPLEAF_BLOCK.getId(), () -> new BlockItem(SNAPLEAF_BLOCK.get(), new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
 
     public static void init() {
         BLOCKS.register();
