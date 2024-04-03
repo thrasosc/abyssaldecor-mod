@@ -1,15 +1,15 @@
 {
-  "type": "abyssaldecor:block",
+  "type": "minecraft:block",
   "pools": [
     {
       "bonus_rolls": 0.0,
       "conditions": [
         {
-          "condition": "abyssaldecor:match_tool",
+          "condition": "minecraft:match_tool",
           "predicate": {
             "enchantments": [
               {
-                "enchantment": "abyssaldecor:silk_touch",
+                "enchantment": "minecraft:silk_touch",
                 "levels": {
                   "min": 1
                 }
@@ -20,12 +20,12 @@
       ],
       "entries": [
         {
-          "type": "abyssaldecor:item",
-          "name": "abyssaldecor:glass"
+          "type": "minecraft:item",
+          "name": "abyssaldecor:pearly_glass_block_azure"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "abyssaldecor:blocks/glass"
+  "random_sequence": "abyssaldecor:blocks/pearly_glass_block_azure"
 }

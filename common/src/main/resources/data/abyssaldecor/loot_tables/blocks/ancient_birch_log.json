@@ -1,16 +1,16 @@
 {
-  "type": "abyssaldecor:block",
+  "type": "minecraft:block",
   "pools": [
     {
       "bonus_rolls": 0.0,
       "conditions": [
         {
-          "condition": "abyssaldecor:survives_explosion"
+          "condition": "minecraft:survives_explosion"
         }
       ],
       "entries": [
         {
-          "type": "abyssaldecor:item",
+          "type": "minecraft:item",
           "name": "abyssaldecor:ancient_birch_log"
         }
       ],
