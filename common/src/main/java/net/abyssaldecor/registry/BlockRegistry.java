@@ -11,6 +11,8 @@ import net.minecraft.world.item.ItemNameBlockItem;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.properties.BlockSetType;
+import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
+import net.minecraft.world.level.material.PushReaction;
 
 import static net.abyssaldecor.AbyssalDecor.MOD_ID;
 import static net.abyssaldecor.registry.ItemGroupRegistry.ABYSSALDECOR_TAB;
@@ -79,8 +81,23 @@ public class BlockRegistry {
     public static final RegistrySupplier<Block> BLACKWOOD_PEARLY_GLASS_BLOCK = BLOCKS.register("pearly_glass_block_blackwood", () -> new Block(BlockBehaviour.Properties.copy(Blocks.GLASS)));
     public static final RegistrySupplier<BlockItem> BLACKWOOD_PEARLY_GLASS_ITEM = BLOCK_ITEMS.register(BLACKWOOD_PEARLY_GLASS_BLOCK.getId(), () -> new BlockItem(BLACKWOOD_PEARLY_GLASS_BLOCK.get(), new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
 
-    public static final RegistrySupplier<Block> SNAPLEAF_BLOCK = BLOCKS.register("snapleaf", () -> new SnapleafBlock(MobEffects.HARM, 5, BlockBehaviour.Properties.copy(Blocks.POPPY).sound(SoundType.GRASS).instabreak().noCollission()));
+    public static final RegistrySupplier<Block> SNAPLEAF_BLOCK = BLOCKS.register("snapleaf", () -> new SnapleafBlock(MobEffects.HARM, 5, BlockBehaviour.Properties.copy(Blocks.POPPY).sound(SoundType.GRASS).instabreak().noCollission().pushReaction(PushReaction.DESTROY)));
     public static final RegistrySupplier<BlockItem> SNAPLEAF_ITEM = BLOCK_ITEMS.register(SNAPLEAF_BLOCK.getId(), () -> new BlockItem(SNAPLEAF_BLOCK.get(), new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
+    public static final RegistrySupplier<Block> STARLIGHT_BLOCK = BLOCKS.register("starlight", () -> new StarlightBlock(BlockBehaviour.Properties.copy(Blocks.AMETHYST_BLOCK).instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.AMETHYST_CLUSTER).strength(1f).lightLevel(s -> 12).noCollission().noOcclusion().hasPostProcess((bs, br, bp) -> true)));
+    public static final RegistrySupplier<BlockItem> STARLIGHT_ITEM = BLOCK_ITEMS.register(STARLIGHT_BLOCK.getId(), () -> new BlockItem(STARLIGHT_BLOCK.get(), new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
+    public static final RegistrySupplier<Block> BARK_ORCHID_BLOCK = BLOCKS.register("bark_orchid", () -> new BarkOrchidBlock(BlockBehaviour.Properties.copy(Blocks.MOSS_BLOCK).sound(SoundType.GRASS).instabreak().noOcclusion().isRedstoneConductor((bs, br, bp) -> false)));
+    public static final RegistrySupplier<BlockItem> BARK_ORCHID_ITEM = BLOCK_ITEMS.register(BARK_ORCHID_BLOCK.getId(), () -> new BlockItem(BARK_ORCHID_BLOCK.get(), new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
+    public static final RegistrySupplier<Block> LIFE_PRESERVER_BLOCK = BLOCKS.register("life_preserver", () -> new LifePreserverBlock(BlockBehaviour.Properties.copy(Blocks.WHITE_WOOL).instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.WOOL).strength(0f, 1f).noOcclusion().isRedstoneConductor((bs, br, bp) -> false)));
+    public static final RegistrySupplier<BlockItem> LIFE_PRESERVER_ITEM = BLOCK_ITEMS.register(LIFE_PRESERVER_BLOCK.getId(), () -> new BlockItem(LIFE_PRESERVER_BLOCK.get(), new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
+
+    public static final RegistrySupplier<Block> MUCKROOT_BLOCK = BLOCKS.register("muckroot", () -> new MuckrootBlock(BlockBehaviour.Properties.copy(Blocks.CARROTS).sound(SoundType.GRASS).instabreak().noCollission().noOcclusion().randomTicks().isRedstoneConductor((bs, br, bp) -> false)));
+    public static final RegistrySupplier<BlockItem> MUCKROOT_ITEM = BLOCK_ITEMS.register(MUCKROOT_BLOCK.getId(), () -> new BlockItem(MUCKROOT_BLOCK.get(), new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
+    public static final RegistrySupplier<Block> MUCKROOT_2_BLOCK = BLOCKS.register("muckroot_2", () -> new Muckroot2Block(BlockBehaviour.Properties.copy(Blocks.CARROTS).sound(SoundType.GRASS).instabreak().noCollission().noOcclusion().randomTicks().isRedstoneConductor((bs, br, bp) -> false)));
+    public static final RegistrySupplier<BlockItem> MUCKROOT_2_ITEM = BLOCK_ITEMS.register(MUCKROOT_2_BLOCK.getId(), () -> new BlockItem(MUCKROOT_2_BLOCK.get(), new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
+
+    public static final RegistrySupplier<Block> MUCKROOT_3_BLOCK = BLOCKS.register("muckroot_3", () -> new MuckrootBlock(BlockBehaviour.Properties.copy(Blocks.CARROTS).sound(SoundType.GRASS).instabreak().noCollission().noOcclusion().randomTicks().isRedstoneConductor((bs, br, bp) -> false)));
+    public static final RegistrySupplier<BlockItem> MUCKROOT_3_ITEM = BLOCK_ITEMS.register(MUCKROOT_3_BLOCK.getId(), () -> new BlockItem(MUCKROOT_3_BLOCK.get(), new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
+
     public static void init() {
         BLOCKS.register();
         BLOCK_ITEMS.register();

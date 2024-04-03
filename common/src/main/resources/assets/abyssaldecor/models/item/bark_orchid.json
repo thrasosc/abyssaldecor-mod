@@ -2,6 +2,5 @@
   "parent": "item/generated",
   "textures": {
     "layer0": "abyssaldecor:item/orchid2"
-  },
-  "render_type": "translucent"
+  }
 }

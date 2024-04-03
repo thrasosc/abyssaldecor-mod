@@ -58,11 +58,9 @@ public class ItemRegistry {
     public static final RegistrySupplier<Item> MOLDY_STALK_SOLO = ITEMS.register("moldy_stalk_solo", () -> new Item(new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
     public static final RegistrySupplier<Item> MOLDY_SPROUTS = ITEMS.register("moldy_sprouts", () -> new Item(new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
     public static final RegistrySupplier<Item> MOLDY_STALKS = ITEMS.register("moldy_stalks", () -> new Item(new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
-    public static final RegistrySupplier<Item> MUCKROOT = ITEMS.register("muckroot", () -> new Item(new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
     public static final RegistrySupplier<Item> COOKED_MUCKROOT = ITEMS.register("cooked_muckroot", () -> new Item(new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
     public static final RegistrySupplier<Item> MUCKROOT_SOUP = ITEMS.register("muckroot_soup", () -> new Item(new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
     public static final RegistrySupplier<Item> NITHING = ITEMS.register("nithing", () -> new Item(new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
-    public static final RegistrySupplier<Item> BARK_ORCHID = ITEMS.register("bark_orchid", () -> new Item(new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
     public static final RegistrySupplier<Item> RAW_SEABRASS = ITEMS.register("raw_seabrass", () -> new Item(new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
     public static final RegistrySupplier<Item> SEABRASS_NUGGET = ITEMS.register("seabrass_nugget", () -> new Item(new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
     public static final RegistrySupplier<Item> SHELL = ITEMS.register("shell", () -> new Item(new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
@@ -74,7 +72,6 @@ public class ItemRegistry {
     public static final RegistrySupplier<Item> POPPED_SPIDERCORN = ITEMS.register("popped_spidercorn", () -> new Item(new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
     public static final RegistrySupplier<Item> DRIED_STARFISH = ITEMS.register("dried_starfish", () -> new Item(new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
     public static final RegistrySupplier<Item> STARFISH = ITEMS.register("starfish", () -> new Item(new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
-    public static final RegistrySupplier<Item> STARLIGHT = ITEMS.register("starlight", () -> new Item(new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
     public static final RegistrySupplier<Item> TELESCOPE_BOTTOM = ITEMS.register("telescope_bottom", () -> new Item(new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
     public static final RegistrySupplier<Item> VELVET_BARRIER_BASE = ITEMS.register("velvet_barrier_base", () -> new Item(new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
     public static final RegistrySupplier<Item> WHITE_PEARL = ITEMS.register("white_pearl", () -> new Item(new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
