@@ -4,6 +4,5 @@
     "all": "abyssaldecor:block/smallhangingweb",
     "particle": "abyssaldecor:block/smallhangingweb",
     "0": "abyssaldecor:block/smallhangingweb"
-  },
-  "render_type": "cutout_mipped"
+  }
 }

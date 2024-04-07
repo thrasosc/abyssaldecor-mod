@@ -98,6 +98,16 @@ public class BlockRegistry {
     public static final RegistrySupplier<Block> MUCKROOT_3_BLOCK = BLOCKS.register("muckroot_3", () -> new MuckrootBlock(BlockBehaviour.Properties.copy(Blocks.CARROTS).sound(SoundType.GRASS).instabreak().noCollission().noOcclusion().randomTicks().isRedstoneConductor((bs, br, bp) -> false)));
     public static final RegistrySupplier<BlockItem> MUCKROOT_3_ITEM = BLOCK_ITEMS.register(MUCKROOT_3_BLOCK.getId(), () -> new BlockItem(MUCKROOT_3_BLOCK.get(), new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
 
+    public static final RegistrySupplier<Block> WOODEN_DRAGON_HEAD_BLOCK = BLOCKS.register("wooden_dragon_head", () -> new WoodenDragonHeadBlock(BlockBehaviour.Properties.copy(Blocks.COMPOSTER).ignitedByLava().instrument(NoteBlockInstrument.BASS).sound(SoundType.WOOD).strength(2f, 10f).noOcclusion().isRedstoneConductor((bs, br, bp) -> false)));
+    public static final RegistrySupplier<BlockItem> WOODEN_DRAGON_HEAD_ITEM = BLOCK_ITEMS.register(WOODEN_DRAGON_HEAD_BLOCK.getId(), () -> new BlockItem(WOODEN_DRAGON_HEAD_BLOCK.get(), new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
+
+    public static final RegistrySupplier<Block> WOODEN_FROG_BLOCK = BLOCKS.register("wooden_frog", () -> new WoodenFrogBlock(BlockBehaviour.Properties.copy(Blocks.COMPOSTER).ignitedByLava().instrument(NoteBlockInstrument.BASS).sound(SoundType.WOOD).strength(2f, 10f).noOcclusion().isRedstoneConductor((bs, br, bp) -> false)));
+    public static final RegistrySupplier<BlockItem> WOODEN_FROG_ITEM = BLOCK_ITEMS.register(WOODEN_FROG_BLOCK.getId(), () -> new BlockItem(WOODEN_FROG_BLOCK.get(), new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
+
+    public static final RegistrySupplier<Block> HANGING_WEB_BLOCK = BLOCKS.register("hanging_web", () -> new HangingWebBlock(BlockBehaviour.Properties.copy(Blocks.GRASS).sound(SoundType.VINE).strength(0f, 1f).noCollission().noOcclusion().isRedstoneConductor((bs, br, bp) -> false)));
+    public static final RegistrySupplier<BlockItem> HANGING_WEB_ITEM = BLOCK_ITEMS.register(HANGING_WEB_BLOCK.getId(), () -> new BlockItem(HANGING_WEB_BLOCK.get(), new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
+
+
     public static void init() {
         BLOCKS.register();
         BLOCK_ITEMS.register();

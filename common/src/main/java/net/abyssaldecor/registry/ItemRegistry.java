@@ -67,7 +67,6 @@ public class ItemRegistry {
     public static final RegistrySupplier<Item> SHIP_WHEEL = ITEMS.register("ship_wheel", () -> new Item(new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
     public static final RegistrySupplier<Item> SHORTGILLS = ITEMS.register("shortgills", () -> new Item(new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
     public static final RegistrySupplier<Item> SLUMP_LIGHT = ITEMS.register("slump_light", () -> new Item(new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
-    public static final RegistrySupplier<Item> HANGING_WEB_ITEM = ITEMS.register("hanging_web_item", () -> new Item(new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
     public static final RegistrySupplier<Item> SPIDERCORN_CROP = ITEMS.register("spidercorn_crop", () -> new Item(new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
     public static final RegistrySupplier<Item> POPPED_SPIDERCORN = ITEMS.register("popped_spidercorn", () -> new Item(new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
     public static final RegistrySupplier<Item> DRIED_STARFISH = ITEMS.register("dried_starfish", () -> new Item(new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
