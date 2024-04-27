@@ -1,4 +1,4 @@
-package net.abyssaldecor.block;
+package net.abyssaldecor.block.abstraction;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.sounds.SoundEvents;
@@ -11,11 +11,13 @@ import net.minecraft.world.level.block.RedstoneLampBlock;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.BlockHitResult;
 
-public class AbyssalLanternBlock extends RedstoneLampBlock {
-    public AbyssalLanternBlock(Properties properties) {
+public class LampBlock extends RedstoneLampBlock {
+
+    public LampBlock(Properties properties) {
         super(properties);
     }
 
+    @Override
     public InteractionResult use(BlockState blockState, Level level, BlockPos blockPos, Player player, InteractionHand interactionHand, BlockHitResult blockHitResult) {
         if (interactionHand == InteractionHand.MAIN_HAND && player.getItemInHand(interactionHand).isEmpty()) {
             level.playSound(player, blockPos, SoundEvents.FLINTANDSTEEL_USE, SoundSource.BLOCKS, 1f, 1f);

@@ -1,5 +1,11 @@
 {
   "variants": {
+    "lit=false": {
+      "model": "abyssaldecor:block/bulb_lamp_floor"
+    },
+    "lit=true": {
+      "model": "abyssaldecor:block/bulb_lamp_floor_lit"
+    },
     "facing=north": {
       "model": "abyssaldecor:block/bulb_lamp_floor"
     },
