@@ -4,6 +4,5 @@
     "all": "abyssaldecor:block/foghorn",
     "particle": "abyssaldecor:block/foghorn",
     "0": "abyssaldecor:block/foghorn"
-  },
-  "render_type": "cutout_mipped"
+  }
 }

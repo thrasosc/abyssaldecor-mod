@@ -1,7 +1,6 @@
 
 package net.abyssaldecor.block;
 
-import net.abyssaldecor.block.abstraction.LampBlock;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.network.chat.Component;
@@ -16,24 +15,20 @@ import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.block.state.properties.BooleanProperty;
 import net.minecraft.world.level.block.state.properties.DirectionProperty;
-import net.minecraft.world.level.block.state.properties.Property;
 import net.minecraft.world.level.material.FluidState;
 import net.minecraft.world.level.material.Fluids;
-import net.minecraft.world.level.storage.loot.LootParams;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
 
-import java.util.Collections;
 import java.util.List;
 
-public class WallBulbLampBlock extends LampBlock implements SimpleWaterloggedBlock {
-	public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
+public class DeskBellBlock extends Block implements SimpleWaterloggedBlock {
+	public static final DirectionProperty FACING = DirectionalBlock.FACING;
 	public static final BooleanProperty WATERLOGGED = BlockStateProperties.WATERLOGGED;
 
-	public WallBulbLampBlock(Properties properties) {
+	public DeskBellBlock(Properties properties){
 		super(properties);
-		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH).setValue(WATERLOGGED, false));
 	}
 
 	@Override
@@ -59,24 +54,23 @@ public class WallBulbLampBlock extends LampBlock implements SimpleWaterloggedBlo
 	@Override
 	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
 		return switch (state.getValue(FACING)) {
-			default -> Shapes.or(box(5, 8, 5, 11, 14, 11), box(6, 3, 0, 10, 14, 1), box(7, 0, 7, 9, 8, 9));
-			case NORTH -> Shapes.or(box(5, 8, 5, 11, 14, 11), box(6, 3, 15, 10, 14, 16), box(7, 0, 7, 9, 8, 9));
-			case EAST -> Shapes.or(box(5, 8, 5, 11, 14, 11), box(0, 3, 6, 1, 14, 10), box(7, 0, 7, 9, 8, 9));
-			case WEST -> Shapes.or(box(5, 8, 5, 11, 14, 11), box(15, 3, 6, 16, 14, 10), box(7, 0, 7, 9, 8, 9));
+			default -> box(5.5, 5.5, 0, 10.5, 10.5, 3);
+			case NORTH -> box(5.5, 5.5, 13, 10.5, 10.5, 16);
+			case EAST -> box(0, 5.5, 5.5, 3, 10.5, 10.5);
+			case WEST -> box(13, 5.5, 5.5, 16, 10.5, 10.5);
+			case UP -> box(5.5, 0, 5.5, 10.5, 3, 10.5);
+			case DOWN -> box(5.5, 13, 5.5, 10.5, 16, 10.5);
 		};
 	}
 
 	@Override
 	protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
-		builder.add(new Property[]{LIT});
 		builder.add(FACING, WATERLOGGED);
 	}
 
 	@Override
 	public BlockState getStateForPlacement(BlockPlaceContext context) {
 		boolean flag = context.getLevel().getFluidState(context.getClickedPos()).getType() == Fluids.WATER;
-		if (context.getClickedFace().getAxis() == Direction.Axis.Y)
-			return this.defaultBlockState().setValue(FACING, Direction.NORTH).setValue(WATERLOGGED, flag);
 		return this.defaultBlockState().setValue(FACING, context.getClickedFace()).setValue(WATERLOGGED, flag);
 	}
 
@@ -92,20 +86,11 @@ public class WallBulbLampBlock extends LampBlock implements SimpleWaterloggedBlo
 	public FluidState getFluidState(BlockState state) {
 		return state.getValue(WATERLOGGED) ? Fluids.WATER.getSource(false) : super.getFluidState(state);
 	}
-
 	@Override
 	public BlockState updateShape(BlockState state, Direction facing, BlockState facingState, LevelAccessor world, BlockPos currentPos, BlockPos facingPos) {
 		if (state.getValue(WATERLOGGED)) {
 			world.scheduleTick(currentPos, Fluids.WATER, Fluids.WATER.getTickDelay(world));
 		}
 		return super.updateShape(state, facing, facingState, world, currentPos, facingPos);
-	}
-
-	@Override
-	public List<ItemStack> getDrops(BlockState state, LootParams.Builder builder) {
-		List<ItemStack> dropsOriginal = super.getDrops(state, builder);
-		if (!dropsOriginal.isEmpty())
-			return dropsOriginal;
-		return Collections.singletonList(new ItemStack(this, 1));
 	}
 }

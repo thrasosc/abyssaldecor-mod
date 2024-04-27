@@ -4,6 +4,5 @@
     "all": "abyssaldecor:block/deskbell",
     "particle": "abyssaldecor:block/deskbell",
     "0": "abyssaldecor:block/deskbell"
-  },
-  "render_type": "solid"
+  }
 }

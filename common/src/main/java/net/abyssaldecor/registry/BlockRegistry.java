@@ -3,7 +3,6 @@ package net.abyssaldecor.registry;
 import dev.architectury.registry.registries.DeferredRegister;
 import dev.architectury.registry.registries.RegistrySupplier;
 import net.abyssaldecor.block.*;
-import net.abyssaldecor.block.abstraction.LampBlock;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.item.BlockItem;
@@ -21,7 +20,7 @@ import static net.abyssaldecor.registry.ItemGroupRegistry.ABYSSALDECOR_TAB;
 public class BlockRegistry {
     public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(MOD_ID, Registries.BLOCK);
     public static final DeferredRegister<Item> BLOCK_ITEMS = DeferredRegister.create(MOD_ID, Registries.ITEM);
-    public static final RegistrySupplier<Block> ABYSSAL_LANTERN_BLOCK = BLOCKS.register("abyssal_lantern", () -> new LampBlock(BlockBehaviour.Properties.copy(Blocks.REDSTONE_LAMP)));
+    public static final RegistrySupplier<Block> ABYSSAL_LANTERN_BLOCK = BLOCKS.register("abyssal_lantern", () -> new AbyssalLanternBlock(BlockBehaviour.Properties.copy(Blocks.REDSTONE_LAMP)));
     public static final RegistrySupplier<BlockItem> ABYSSAL_LANTERN_ITEM = BLOCK_ITEMS.register(ABYSSAL_LANTERN_BLOCK.getId(), () -> new BlockItem(ABYSSAL_LANTERN_BLOCK.get(), new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
     public static final RegistrySupplier<Block> AMARANTH_CRATE_BLOCK = BLOCKS.register("amaranth_crate", () -> new Block(BlockBehaviour.Properties.copy(Blocks.COMPOSTER)));
     public static final RegistrySupplier<BlockItem> AMARANTH_CRATE_ITEM = BLOCK_ITEMS.register(AMARANTH_CRATE_BLOCK.getId(), () -> new BlockItem(AMARANTH_CRATE_BLOCK.get(), new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
@@ -61,10 +60,10 @@ public class BlockRegistry {
     public static final RegistrySupplier<BlockItem> PRISMARINE_CRYSTAL_ITEM = BLOCK_ITEMS.register(PRISMARINE_CRYSTAL_BLOCK.getId(), () -> new BlockItem(PRISMARINE_CRYSTAL_BLOCK.get(), new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
     public static final RegistrySupplier<Block> FRESNEL_BLOCK = BLOCKS.register("fresnel_block", () -> new Block(BlockBehaviour.Properties.copy(Blocks.GLASS)));
     public static final RegistrySupplier<BlockItem> FRESNEL_ITEM = BLOCK_ITEMS.register(FRESNEL_BLOCK.getId(), () -> new BlockItem(FRESNEL_BLOCK.get(), new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
-    public static final RegistrySupplier<Block> CRYSTALIZED_GLOWSTONE_BLOCK = BLOCKS.register("crystalized_glowstone", () -> new Block(BlockBehaviour.Properties.copy(Blocks.GLOWSTONE)));
+    public static final RegistrySupplier<Block> CRYSTALIZED_GLOWSTONE_BLOCK = BLOCKS.register("crystalized_glowstone", () -> new Block(BlockBehaviour.Properties.copy(Blocks.GLASS)));
     public static final RegistrySupplier<BlockItem> CRYSTALIZED_GLOWSTONE_ITEM = BLOCK_ITEMS.register(CRYSTALIZED_GLOWSTONE_BLOCK.getId(), () -> new BlockItem(CRYSTALIZED_GLOWSTONE_BLOCK.get(), new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
 
-    public static final RegistrySupplier<Block> FRAMED_CRYSTALIZED_GLOWSTONE_BLOCK = BLOCKS.register("framed_crystalized_glowstone", () -> new Block(BlockBehaviour.Properties.copy(Blocks.GLOWSTONE)));
+    public static final RegistrySupplier<Block> FRAMED_CRYSTALIZED_GLOWSTONE_BLOCK = BLOCKS.register("framed_crystalized_glowstone", () -> new Block(BlockBehaviour.Properties.copy(Blocks.GLASS)));
     public static final RegistrySupplier<BlockItem> FRAMED_CRYSTALIZED_GLOWSTONE_ITEM = BLOCK_ITEMS.register(FRAMED_CRYSTALIZED_GLOWSTONE_BLOCK.getId(), () -> new BlockItem(FRAMED_CRYSTALIZED_GLOWSTONE_BLOCK.get(), new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
 
     public static final RegistrySupplier<Block> SUNNY_PEARLY_GLASS_BLOCK = BLOCKS.register("pearly_glass_block_sunny", () -> new Block(BlockBehaviour.Properties.copy(Blocks.GLASS)));
@@ -108,11 +107,22 @@ public class BlockRegistry {
     public static final RegistrySupplier<Block> HANGING_WEB_BLOCK = BLOCKS.register("hanging_web", () -> new HangingWebBlock(BlockBehaviour.Properties.copy(Blocks.GRASS).sound(SoundType.VINE).strength(0f, 1f).noCollission().noOcclusion().isRedstoneConductor((bs, br, bp) -> false)));
     public static final RegistrySupplier<BlockItem> HANGING_WEB_ITEM = BLOCK_ITEMS.register(HANGING_WEB_BLOCK.getId(), () -> new BlockItem(HANGING_WEB_BLOCK.get(), new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
 
-    public static final RegistrySupplier<Block> WALL_BULB_LAMP = BLOCKS.register("wall_bulb_lamp", () -> new WallBulbLampBlock(BlockBehaviour.Properties.copy(Blocks.REDSTONE_LAMP).sound(SoundType.LANTERN).strength(2f, 1f).noOcclusion()));
-    public static final RegistrySupplier<BlockItem> WALL_BULB_LAMP_ITEM = BLOCK_ITEMS.register(WALL_BULB_LAMP.getId(), () -> new BlockItem(WALL_BULB_LAMP.get(), new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
+    public static final RegistrySupplier<Block> FRESNEL_LAMP_BLOCK = BLOCKS.register("fresnel_lamp", () -> new FresnelLampBlock(BlockBehaviour.Properties.copy(Blocks.GLASS).instrument(NoteBlockInstrument.HAT).sound(SoundType.GLASS).strength(2f, 10f).lightLevel(s -> 15).noOcclusion().isRedstoneConductor((bs, br, bp) -> false)));
 
-    public static final RegistrySupplier<Block> BULB_LAMP_FLOOR = BLOCKS.register("bulb_lamp_floor", () -> new BulbLampFloorBlock(BlockBehaviour.Properties.copy(Blocks.REDSTONE_LAMP).sound(SoundType.LANTERN).strength(2f, 1f).noOcclusion()));
-    public static final RegistrySupplier<BlockItem> BULB_LAMP_FLOOR_ITEM = BLOCK_ITEMS.register(BULB_LAMP_FLOOR.getId(), () -> new BlockItem(BULB_LAMP_FLOOR.get(), new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
+    public static final RegistrySupplier<BlockItem> FRENSEL_LAMP_ITEM = BLOCK_ITEMS.register(FRESNEL_LAMP_BLOCK.getId(), () -> new BlockItem(FRESNEL_LAMP_BLOCK.get(), new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
+
+    public static final RegistrySupplier<Block> RAINBOW_1_BLOCK = BLOCKS.register("rainbow_1", () -> new Rainbow1Block(BlockBehaviour.Properties.copy(Blocks.LANTERN).instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.GLASS).strength(1f, 10f).lightLevel(s -> 15).noOcclusion().hasPostProcess((bs, br, bp) -> true).emissiveRendering((bs, br, bp) -> true).isRedstoneConductor((bs, br, bp) -> false)));
+    public static final RegistrySupplier<BlockItem> RAINBOW_1_ITEM = BLOCK_ITEMS.register(RAINBOW_1_BLOCK.getId(), () -> new BlockItem(RAINBOW_1_BLOCK.get(), new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
+    public static final RegistrySupplier<Block> FOGHORN_BLOCK = BLOCKS.register("foghorn", () -> new FoghornBlock(BlockBehaviour.Properties.copy(Blocks.LANTERN).instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.LANTERN).strength(5f, 10f).noOcclusion().isRedstoneConductor((bs, br, bp) -> false)));
+    public static final RegistrySupplier<BlockItem> FOGHORN_ITEM = BLOCK_ITEMS.register(FOGHORN_BLOCK.getId(), () -> new BlockItem(FOGHORN_BLOCK.get(), new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
+    public static final RegistrySupplier<Block> DESK_BELL_BLOCK = BLOCKS.register("desk_bell", () -> new DeskBellBlock(BlockBehaviour.Properties.copy(Blocks.LANTERN).sound(SoundType.LANTERN).strength(1f).noOcclusion().isRedstoneConductor((bs, br, bp) -> false)));
+    public static final RegistrySupplier<BlockItem> DESK_BELL_ITEM = BLOCK_ITEMS.register(DESK_BELL_BLOCK.getId(), () -> new BlockItem(DESK_BELL_BLOCK.get(), new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
+
+    public static final RegistrySupplier<Block> BLAZE_LAMP_ON_BLOCK = BLOCKS.register("blaze_lamp_on", () -> new BlazeLampOnBlock(BlockBehaviour.Properties.copy(Blocks.LANTERN).sound(SoundType.LANTERN).strength(4f, 10f).lightLevel(s -> 12).noOcclusion().hasPostProcess((bs, br, bp) -> true).emissiveRendering((bs, br, bp) -> true).isRedstoneConductor((bs, br, bp) -> false)));
+    public static final RegistrySupplier<BlockItem> BLAZE_LAMP_ITEM = BLOCK_ITEMS.register(BLAZE_LAMP_ON_BLOCK.getId(), () -> new BlockItem(BLAZE_LAMP_ON_BLOCK.get(), new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
+
+
+
 
     public static void init() {
         BLOCKS.register();

@@ -4,6 +4,5 @@
     "all": "abyssaldecor:block/blazelamp",
     "particle": "abyssaldecor:block/blazelamp",
     "0": "abyssaldecor:block/blazelamp"
-  },
-  "render_type": "cutout_mipped"
+  }
 }

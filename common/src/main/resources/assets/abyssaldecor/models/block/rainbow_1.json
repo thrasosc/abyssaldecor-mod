@@ -5,6 +5,5 @@
     "particle": "abyssaldecor:block/rainbow2",
     "1": "abyssaldecor:block/rainbow2",
     "2": "abyssaldecor:block/rainbowlampbase"
-  },
-  "render_type": "translucent"
+  }
 }
