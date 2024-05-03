@@ -57,10 +57,16 @@ public class BlockRegistry {
     public static final RegistrySupplier<BlockItem> SCRIMSHAW_ITEM = BLOCK_ITEMS.register(SCRIMSHAW_BLOCK.getId(), () -> new BlockItem(SCRIMSHAW_BLOCK.get(), new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
     public static final RegistrySupplier<Block> SCRIMSHAW_ALTAR_BLOCK = BLOCKS.register("scrimshaw_altar", () -> new ScrimshawAltarBlock(BlockBehaviour.Properties.copy(Blocks.STONE)));
     public static final RegistrySupplier<BlockItem> SCRIMSHAW_ALTAR_ITEM = BLOCK_ITEMS.register(SCRIMSHAW_ALTAR_BLOCK.getId(), () -> new BlockItem(SCRIMSHAW_ALTAR_BLOCK.get(), new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
+
     public static final RegistrySupplier<Block> PRISMARINE_CRYSTAL_BLOCK = BLOCKS.register("block_of_prismarine_crystal", () -> new Block(BlockBehaviour.Properties.copy(Blocks.GLASS)));
     public static final RegistrySupplier<BlockItem> PRISMARINE_CRYSTAL_ITEM = BLOCK_ITEMS.register(PRISMARINE_CRYSTAL_BLOCK.getId(), () -> new BlockItem(PRISMARINE_CRYSTAL_BLOCK.get(), new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
+    public static final RegistrySupplier<Block> PRISMARINE_CRYSTAL_PANE_BLOCK = BLOCKS.register("prismarine_crystal_pane", () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.GLASS)));
+    public static final RegistrySupplier<BlockItem> PRISMARINE_CRYSTAL_PANE_ITEM = BLOCK_ITEMS.register(PRISMARINE_CRYSTAL_PANE_BLOCK.getId(), () -> new BlockItem(PRISMARINE_CRYSTAL_PANE_BLOCK.get(), new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
+
     public static final RegistrySupplier<Block> FRESNEL_BLOCK = BLOCKS.register("fresnel_block", () -> new Block(BlockBehaviour.Properties.copy(Blocks.GLASS)));
     public static final RegistrySupplier<BlockItem> FRESNEL_ITEM = BLOCK_ITEMS.register(FRESNEL_BLOCK.getId(), () -> new BlockItem(FRESNEL_BLOCK.get(), new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
+
+
     public static final RegistrySupplier<Block> CRYSTALIZED_GLOWSTONE_BLOCK = BLOCKS.register("crystalized_glowstone", () -> new Block(BlockBehaviour.Properties.copy(Blocks.GLOWSTONE)));
     public static final RegistrySupplier<BlockItem> CRYSTALIZED_GLOWSTONE_ITEM = BLOCK_ITEMS.register(CRYSTALIZED_GLOWSTONE_BLOCK.getId(), () -> new BlockItem(CRYSTALIZED_GLOWSTONE_BLOCK.get(), new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
 
@@ -128,7 +134,7 @@ public class BlockRegistry {
     public static final RegistrySupplier<Block> BULB_LAMP_FLOOR = BLOCKS.register("bulb_lamp_floor", () -> new BulbLampFloorBlock(BlockBehaviour.Properties.copy(Blocks.REDSTONE_LAMP).sound(SoundType.LANTERN).strength(2f, 1f).noOcclusion()));
     public static final RegistrySupplier<BlockItem> BULB_LAMP_FLOOR_ITEM = BLOCK_ITEMS.register(BULB_LAMP_FLOOR.getId(), () -> new BlockItem(BULB_LAMP_FLOOR.get(), new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
 
-    public static final RegistrySupplier<Block> GARGOYLE_BLOCK = BLOCKS.register("gargoyle", () -> new GargoyleBlock(BlockBehaviour.Properties.copy(Blocks.STONE).noOcclusion()));
+    public static final RegistrySupplier<Block> GARGOYLE_BLOCK = BLOCKS.register("gargoyle", () -> new GargoyleBlock(BlockBehaviour.Properties.copy(Blocks.STONE).strength(2f, 10f).noOcclusion()));
     public static final RegistrySupplier<BlockItem> GARGOYLE_ITEM = BLOCK_ITEMS.register(GARGOYLE_BLOCK.getId(), () -> new BlockItem(GARGOYLE_BLOCK.get(), new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
 
     public static void init() {
