@@ -18,11 +18,15 @@ import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
 
-public class WoodenFrogBlock extends Block implements SimpleWaterloggedBlock {
+public class GargoyleBlock extends Block implements SimpleWaterloggedBlock {
 	public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
 	public static final BooleanProperty WATERLOGGED = BlockStateProperties.WATERLOGGED;
+	private static VoxelShape VOXEL_SHAPE_NORTH = Block.box(0, 0, -15, 16, 16, 16);
+	private static VoxelShape VOXEL_SHAPE_WEST = Block.box(-15, 0, 0, 16, 16, 16);
+	private static VoxelShape VOXEL_SHAPE_EAST = Block.box(0, 0, 0, 31, 16, 16);
+	private static VoxelShape VOXEL_SHAPE_SOUTH = Block.box(0, 0, 0, 16, 16, 31);
 
-	public WoodenFrogBlock(Properties properties){
+	public GargoyleBlock(Properties properties){
 		super(properties);
 	}
 
@@ -44,10 +48,10 @@ public class WoodenFrogBlock extends Block implements SimpleWaterloggedBlock {
 	@Override
 	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
 		return switch (state.getValue(FACING)) {
-			default -> box(4, 0, 2, 12, 9, 14);
-			case NORTH -> box(4, 0, 2, 12, 9, 14);
-			case EAST -> box(2, 0, 4, 14, 9, 12);
-			case WEST -> box(2, 0, 4, 14, 9, 12);
+			default -> VOXEL_SHAPE_SOUTH;
+			case NORTH -> VOXEL_SHAPE_NORTH;
+			case EAST -> VOXEL_SHAPE_EAST;
+			case WEST -> VOXEL_SHAPE_WEST;
 		};
 	}
 

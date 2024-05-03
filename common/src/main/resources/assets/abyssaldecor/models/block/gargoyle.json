@@ -1,5 +1,5 @@
 {
-  "parent": "abyssaldecor:custom/gargoyletop",
+  "parent": "abyssaldecor:custom/gargoyle",
   "textures": {
     "all": "abyssaldecor:block/ammonite",
     "particle": "abyssaldecor:block/ammonite",

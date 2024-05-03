@@ -112,8 +112,8 @@ public class BlockRegistry {
 
     public static final RegistrySupplier<BlockItem> FRENSEL_LAMP_ITEM = BLOCK_ITEMS.register(FRESNEL_LAMP_BLOCK.getId(), () -> new BlockItem(FRESNEL_LAMP_BLOCK.get(), new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
 
-    public static final RegistrySupplier<Block> RAINBOW_1_BLOCK = BLOCKS.register("rainbow_1", () -> new Rainbow1Block(BlockBehaviour.Properties.copy(Blocks.LANTERN).instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.GLASS).strength(1f, 10f).lightLevel(s -> 15).noOcclusion().hasPostProcess((bs, br, bp) -> true).emissiveRendering((bs, br, bp) -> true).isRedstoneConductor((bs, br, bp) -> false)));
-    public static final RegistrySupplier<BlockItem> RAINBOW_1_ITEM = BLOCK_ITEMS.register(RAINBOW_1_BLOCK.getId(), () -> new BlockItem(RAINBOW_1_BLOCK.get(), new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
+    public static final RegistrySupplier<Block> RAINBOW_LAMP_BLOCK = BLOCKS.register("rainbow_1", () -> new Rainbow1Block(BlockBehaviour.Properties.copy(Blocks.LANTERN).instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.GLASS).strength(1f, 10f).lightLevel(s -> 15).noOcclusion().hasPostProcess((bs, br, bp) -> true).emissiveRendering((bs, br, bp) -> true).isRedstoneConductor((bs, br, bp) -> false)));
+    public static final RegistrySupplier<BlockItem> RAINBOW_1_ITEM = BLOCK_ITEMS.register(RAINBOW_LAMP_BLOCK.getId(), () -> new BlockItem(RAINBOW_LAMP_BLOCK.get(), new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
     public static final RegistrySupplier<Block> FOGHORN_BLOCK = BLOCKS.register("foghorn", () -> new FoghornBlock(BlockBehaviour.Properties.copy(Blocks.LANTERN).instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.LANTERN).strength(5f, 10f).noOcclusion().isRedstoneConductor((bs, br, bp) -> false)));
     public static final RegistrySupplier<BlockItem> FOGHORN_ITEM = BLOCK_ITEMS.register(FOGHORN_BLOCK.getId(), () -> new BlockItem(FOGHORN_BLOCK.get(), new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
     public static final RegistrySupplier<Block> DESK_BELL_BLOCK = BLOCKS.register("desk_bell", () -> new DeskBellBlock(BlockBehaviour.Properties.copy(Blocks.LANTERN).sound(SoundType.LANTERN).strength(1f).noOcclusion().isRedstoneConductor((bs, br, bp) -> false)));
@@ -127,6 +127,9 @@ public class BlockRegistry {
 
     public static final RegistrySupplier<Block> BULB_LAMP_FLOOR = BLOCKS.register("bulb_lamp_floor", () -> new BulbLampFloorBlock(BlockBehaviour.Properties.copy(Blocks.REDSTONE_LAMP).sound(SoundType.LANTERN).strength(2f, 1f).noOcclusion()));
     public static final RegistrySupplier<BlockItem> BULB_LAMP_FLOOR_ITEM = BLOCK_ITEMS.register(BULB_LAMP_FLOOR.getId(), () -> new BlockItem(BULB_LAMP_FLOOR.get(), new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
+
+    public static final RegistrySupplier<Block> GARGOYLE_BLOCK = BLOCKS.register("gargoyle", () -> new GargoyleBlock(BlockBehaviour.Properties.copy(Blocks.STONE).noOcclusion()));
+    public static final RegistrySupplier<BlockItem> GARGOYLE_ITEM = BLOCK_ITEMS.register(GARGOYLE_BLOCK.getId(), () -> new BlockItem(GARGOYLE_BLOCK.get(), new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
 
     public static void init() {
         BLOCKS.register();

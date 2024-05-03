@@ -1,6 +1,5 @@
 {
   "itemGroup.abyssaldecor.abyssaldecor_tab": "Abyssal Decor",
-  "item.abyssaldecor.gargoyle": "Gargoyle",
   "item.abyssaldecor.amaranth_pinnacle": "Amaranth Pinnacle",
   "item.abyssaldecor.amaranth_seeds": "Amaranth Seeds",
   "item.abyssaldecor.black_pearl": "Black Pearl",
@@ -250,7 +249,7 @@
   "block.abyssaldecor.cracked_bricks_5": "Cracked Bricks",
   "block.abyssaldecor.cracked_bricks_2": "Cracked Bricks",
   "block.abyssaldecor.cinnamon_pressure_plate": "Cinnamon Pressure Plate",
-  "block.abyssaldecor.gargoyle_top": "Gargoyle",
+  "block.abyssaldecor.gargoyle": "Gargoyle",
   "block.abyssaldecor.cracked_bricks_4": "Cracked Bricks",
   "block.abyssaldecor.cracked_bricks_3": "Cracked Bricks",
   "block.abyssaldecor.dull_iron_bars": "Dull Iron Bars",
@@ -433,7 +432,6 @@
   "block.abyssaldecor.seabrass_lamp_off": "Seabrass Lamp",
   "block.abyssaldecor.upsidedown_bronze_bars_corner": "Upsidedown Deepbronze Bars Corner",
   "block.abyssaldecor.upsidedown_iron_sconce": "Iron Sconce",
-  "block.abyssaldecor.gargoyle_base": "Gargoyle",
   "block.abyssaldecor.seabrass_lamp_on": "Seabrass Lamp On",
   "block.abyssaldecor.white_wood_fence": "WhiteWood Fence",
   "block.abyssaldecor.seabrass_trapdoor": "Seabrass Trapdoor",
