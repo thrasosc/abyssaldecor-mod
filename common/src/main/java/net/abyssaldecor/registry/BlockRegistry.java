@@ -75,6 +75,8 @@ public class BlockRegistry {
 
     public static final RegistrySupplier<Block> FRAMED_CRYSTALIZED_GLOWSTONE_BLOCK = BLOCKS.register("framed_crystalized_glowstone", () -> new Block(BlockBehaviour.Properties.copy(Blocks.GLOWSTONE)));
     public static final RegistrySupplier<BlockItem> FRAMED_CRYSTALIZED_GLOWSTONE_ITEM = BLOCK_ITEMS.register(FRAMED_CRYSTALIZED_GLOWSTONE_BLOCK.getId(), () -> new BlockItem(FRAMED_CRYSTALIZED_GLOWSTONE_BLOCK.get(), new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
+    public static final RegistrySupplier<Block> FRAMED_CRYSTALIZED_GLOWSTONE_PANE_BLOCK = BLOCKS.register("framed_crystalized_glowstone_pane", () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.GLASS)));
+    public static final RegistrySupplier<BlockItem> FRAMED_CRYSTALIZED_GLOWSTONE_PANE_ITEM = BLOCK_ITEMS.register(FRAMED_CRYSTALIZED_GLOWSTONE_PANE_BLOCK.getId(), () -> new BlockItem(FRAMED_CRYSTALIZED_GLOWSTONE_PANE_BLOCK.get(), new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
 
     public static final RegistrySupplier<Block> SUNNY_PEARLY_GLASS_BLOCK = BLOCKS.register("pearly_glass_block_sunny", () -> new Block(BlockBehaviour.Properties.copy(Blocks.GLASS)));
     public static final RegistrySupplier<BlockItem> SUNNY_PEARLY_GLASS_ITEM = BLOCK_ITEMS.register(SUNNY_PEARLY_GLASS_BLOCK.getId(), () -> new BlockItem(SUNNY_PEARLY_GLASS_BLOCK.get(), new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
