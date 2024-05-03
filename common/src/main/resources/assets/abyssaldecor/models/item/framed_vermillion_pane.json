@@ -1,0 +1,7 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "abyssaldecor:block/framedvermillion"
+  },
+  "render_type": "translucent"
+}
