@@ -4,6 +4,7 @@ import dev.architectury.registry.registries.DeferredRegister;
 import dev.architectury.registry.registries.RegistrySupplier;
 import net.abyssaldecor.block.*;
 import net.abyssaldecor.block.abstraction.LampBlock;
+import net.minecraft.core.Direction;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.item.BlockItem;
@@ -13,6 +14,7 @@ import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.properties.BlockSetType;
 import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
+import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.level.material.PushReaction;
 
 import static net.abyssaldecor.AbyssalDecor.MOD_ID;
@@ -51,8 +53,12 @@ public class BlockRegistry {
     public static final RegistrySupplier<BlockItem> BLACK_PEARL_BRICKS_ITEM = BLOCK_ITEMS.register(BLACK_PEARL_BRICKS_BLOCK.getId(), () -> new BlockItem(BLACK_PEARL_BRICKS_BLOCK.get(), new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
     public static final RegistrySupplier<Block> BLACKWOOD_DOOR_BLOCK = BLOCKS.register("blackwood_door", () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.DARK_OAK_DOOR), BlockSetType.DARK_OAK));
     public static final RegistrySupplier<BlockItem> BLACKWOOD_DOOR_ITEM = BLOCK_ITEMS.register(BLACKWOOD_DOOR_BLOCK.getId(), () -> new BlockItem(BLACKWOOD_DOOR_BLOCK.get(), new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
-    public static final RegistrySupplier<Block> ANCIENT_BIRCH_LOG_BLOCK = BLOCKS.register("ancient_birch_log", () -> new Block(BlockBehaviour.Properties.copy(Blocks.BIRCH_PLANKS)));
+
+    public static final RegistrySupplier<Block> ANCIENT_BIRCH_LOG_BLOCK = BLOCKS.register("ancient_birch_log", () -> new RotatedPillarBlock(BlockBehaviour.Properties.of().mapColor((blockState) -> blockState.getValue(RotatedPillarBlock.AXIS) == Direction.Axis.Y ? MapColor.SAND : MapColor.QUARTZ).instrument(NoteBlockInstrument.BASS).strength(2.0F).sound(SoundType.WOOD).ignitedByLava()));
     public static final RegistrySupplier<BlockItem> ANCIENT_BIRCH_LOG_ITEM = BLOCK_ITEMS.register(ANCIENT_BIRCH_LOG_BLOCK.getId(), () -> new BlockItem(ANCIENT_BIRCH_LOG_BLOCK.get(), new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
+    public static final RegistrySupplier<Block> STRIPPED_ANCIENT_BIRCH_LOG_BLOCK = BLOCKS.register("stripped_ancient_birch_log", () -> new RotatedPillarBlock(BlockBehaviour.Properties.of().mapColor((blockState) -> blockState.getValue(RotatedPillarBlock.AXIS) == Direction.Axis.Y ? MapColor.SAND : MapColor.SAND).instrument(NoteBlockInstrument.BASS).strength(2.0F).sound(SoundType.WOOD).ignitedByLava()));
+    public static final RegistrySupplier<BlockItem> STRIPPED_ANCIENT_BIRCH_LOG_ITEM = BLOCK_ITEMS.register(STRIPPED_ANCIENT_BIRCH_LOG_BLOCK.getId(), () -> new BlockItem(STRIPPED_ANCIENT_BIRCH_LOG_BLOCK.get(), new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
+
     public static final RegistrySupplier<Block> SCRIMSHAW_BLOCK = BLOCKS.register("scrimshaw_cave", () -> new ScrimshawBlock(BlockBehaviour.Properties.copy(Blocks.STONE)));
     public static final RegistrySupplier<BlockItem> SCRIMSHAW_ITEM = BLOCK_ITEMS.register(SCRIMSHAW_BLOCK.getId(), () -> new BlockItem(SCRIMSHAW_BLOCK.get(), new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
     public static final RegistrySupplier<Block> SCRIMSHAW_ALTAR_BLOCK = BLOCKS.register("scrimshaw_altar", () -> new ScrimshawAltarBlock(BlockBehaviour.Properties.copy(Blocks.STONE)));
