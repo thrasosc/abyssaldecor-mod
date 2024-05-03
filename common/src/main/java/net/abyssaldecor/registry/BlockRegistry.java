@@ -63,6 +63,11 @@ public class BlockRegistry {
     public static final RegistrySupplier<Block> PRISMARINE_CRYSTAL_PANE_BLOCK = BLOCKS.register("prismarine_crystal_pane", () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.GLASS)));
     public static final RegistrySupplier<BlockItem> PRISMARINE_CRYSTAL_PANE_ITEM = BLOCK_ITEMS.register(PRISMARINE_CRYSTAL_PANE_BLOCK.getId(), () -> new BlockItem(PRISMARINE_CRYSTAL_PANE_BLOCK.get(), new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
 
+    public static final RegistrySupplier<Block> VERMILLION_BLOCK = BLOCKS.register("vermillion_block", () -> new Block(BlockBehaviour.Properties.copy(Blocks.GLASS)));
+    public static final RegistrySupplier<BlockItem> VERMILLION_ITEM = BLOCK_ITEMS.register(VERMILLION_BLOCK.getId(), () -> new BlockItem(VERMILLION_BLOCK.get(), new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
+    public static final RegistrySupplier<Block> VERMILLION_PANE_BLOCK = BLOCKS.register("vermillion_pane", () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.GLASS)));
+    public static final RegistrySupplier<BlockItem> VERMILLION_PANE_ITEM = BLOCK_ITEMS.register(VERMILLION_PANE_BLOCK.getId(), () -> new BlockItem(VERMILLION_PANE_BLOCK.get(), new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
+
     public static final RegistrySupplier<Block> FRESNEL_BLOCK = BLOCKS.register("fresnel_block", () -> new Block(BlockBehaviour.Properties.copy(Blocks.GLASS)));
     public static final RegistrySupplier<BlockItem> FRESNEL_ITEM = BLOCK_ITEMS.register(FRESNEL_BLOCK.getId(), () -> new BlockItem(FRESNEL_BLOCK.get(), new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
     public static final RegistrySupplier<Block> FRESNEL_PANE_BLOCK = BLOCKS.register("fresnel_pane", () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.GLASS)));
