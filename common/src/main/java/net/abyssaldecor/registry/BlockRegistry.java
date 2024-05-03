@@ -65,7 +65,8 @@ public class BlockRegistry {
 
     public static final RegistrySupplier<Block> FRESNEL_BLOCK = BLOCKS.register("fresnel_block", () -> new Block(BlockBehaviour.Properties.copy(Blocks.GLASS)));
     public static final RegistrySupplier<BlockItem> FRESNEL_ITEM = BLOCK_ITEMS.register(FRESNEL_BLOCK.getId(), () -> new BlockItem(FRESNEL_BLOCK.get(), new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
-
+    public static final RegistrySupplier<Block> FRESNEL_PANE_BLOCK = BLOCKS.register("fresnel_pane", () -> new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.GLASS)));
+    public static final RegistrySupplier<BlockItem> FRESNEL_PANE_ITEM = BLOCK_ITEMS.register(FRESNEL_PANE_BLOCK.getId(), () -> new BlockItem(FRESNEL_PANE_BLOCK.get(), new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
 
     public static final RegistrySupplier<Block> CRYSTALIZED_GLOWSTONE_BLOCK = BLOCKS.register("crystalized_glowstone", () -> new Block(BlockBehaviour.Properties.copy(Blocks.GLOWSTONE)));
     public static final RegistrySupplier<BlockItem> CRYSTALIZED_GLOWSTONE_ITEM = BLOCK_ITEMS.register(CRYSTALIZED_GLOWSTONE_BLOCK.getId(), () -> new BlockItem(CRYSTALIZED_GLOWSTONE_BLOCK.get(), new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
