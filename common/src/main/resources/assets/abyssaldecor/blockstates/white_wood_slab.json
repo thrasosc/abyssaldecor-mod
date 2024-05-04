@@ -7,7 +7,8 @@
       "model": "abyssaldecor:block/white_wood_slab_top"
     },
     "type=double": {
-      "model": "abyssaldecor:block/white_wood_slab_full"
+      "model": "abyssaldecor:block/white_wood_planks"
     }
   }
 }
+

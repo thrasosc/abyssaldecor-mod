@@ -3,6 +3,5 @@
   "textures": {
     "all": "abyssaldecor:block/whitewoodstrippedlog",
     "particle": "abyssaldecor:block/whitewoodstrippedlog"
-  },
-  "render_type": "solid"
+  }
 }

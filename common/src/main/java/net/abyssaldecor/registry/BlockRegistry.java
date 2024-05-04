@@ -158,6 +158,39 @@ public class BlockRegistry {
     public static final RegistrySupplier<Block> GARGOYLE_BLOCK = BLOCKS.register("gargoyle", () -> new GargoyleBlock(BlockBehaviour.Properties.copy(Blocks.STONE).strength(2f, 10f).noOcclusion()));
     public static final RegistrySupplier<BlockItem> GARGOYLE_ITEM = BLOCK_ITEMS.register(GARGOYLE_BLOCK.getId(), () -> new BlockItem(GARGOYLE_BLOCK.get(), new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
 
+
+
+    public static final RegistrySupplier<Block> WHITE_WOOD_WOOD_BLOCK = BLOCKS.register("white_wood_wood", () -> new RotatedPillarBlock(BlockBehaviour.Properties.of().mapColor((blockState) -> blockState.getValue(RotatedPillarBlock.AXIS) == Direction.Axis.Y ? MapColor.SAND : MapColor.SAND).instrument(NoteBlockInstrument.BASS).strength(2.0F).sound(SoundType.WOOD).ignitedByLava()));
+    public static final RegistrySupplier<BlockItem> WHITE_WOOD_WOOD_ITEM = BLOCK_ITEMS.register(WHITE_WOOD_WOOD_BLOCK.getId(), () -> new BlockItem(WHITE_WOOD_WOOD_BLOCK.get(), new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
+    public static final RegistrySupplier<Block> WHITE_WOOD_LOG_BLOCK = BLOCKS.register("white_wood_log", () -> new RotatedPillarBlock(BlockBehaviour.Properties.of().mapColor((blockState) -> blockState.getValue(RotatedPillarBlock.AXIS) == Direction.Axis.Y ? MapColor.SAND : MapColor.QUARTZ).instrument(NoteBlockInstrument.BASS).strength(2.0F).sound(SoundType.WOOD).ignitedByLava()));
+    public static final RegistrySupplier<BlockItem> WHITE_WOOD_LOG_ITEM = BLOCK_ITEMS.register(WHITE_WOOD_LOG_BLOCK.getId(), () -> new BlockItem(WHITE_WOOD_LOG_BLOCK.get(), new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
+    public static final RegistrySupplier<Block> WHITE_WOOD_PLANKS_BLOCK = BLOCKS.register("white_wood_planks", () -> new Block(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)));
+    public static final RegistrySupplier<BlockItem> WHITE_WOOD_PLANKS_ITEM = BLOCK_ITEMS.register(WHITE_WOOD_PLANKS_BLOCK.getId(), () -> new BlockItem(WHITE_WOOD_PLANKS_BLOCK.get(), new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
+    public static final RegistrySupplier<Block> WHITE_WOOD_STAIRS_BLOCK = BLOCKS.register("white_wood_stairs", () -> new Block(BlockBehaviour.Properties.copy(Blocks.OAK_STAIRS)));
+    public static final RegistrySupplier<BlockItem> WHITE_WOOD_STAIRS_ITEM = BLOCK_ITEMS.register(WHITE_WOOD_STAIRS_BLOCK.getId(), () -> new BlockItem(WHITE_WOOD_STAIRS_BLOCK.get(), new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
+    public static final RegistrySupplier<Block> WHITE_WOOD_SLAB_BLOCK = BLOCKS.register("white_wood_slab", () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SLAB)));
+    public static final RegistrySupplier<BlockItem> WHITE_WOOD_SLAB_ITEM = BLOCK_ITEMS.register(WHITE_WOOD_SLAB_BLOCK.getId(), () -> new BlockItem(WHITE_WOOD_SLAB_BLOCK.get(), new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
+    public static final RegistrySupplier<Block> WHITE_WOOD_BUTTON_BLOCK = BLOCKS.register("white_wood_button", () -> new Block(BlockBehaviour.Properties.copy(Blocks.OAK_BUTTON)));
+    public static final RegistrySupplier<BlockItem> WHITE_WOOD_BUTTON_ITEM = BLOCK_ITEMS.register(WHITE_WOOD_BUTTON_BLOCK.getId(), () -> new BlockItem(WHITE_WOOD_BUTTON_BLOCK.get(), new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
+    public static final RegistrySupplier<Block> WHITE_WOOD_TRIM_BLOCK = BLOCKS.register("white_wood_trim", () -> new RotatedPillarBlock(BlockBehaviour.Properties.of().mapColor((blockState) -> blockState.getValue(RotatedPillarBlock.AXIS) == Direction.Axis.Y ? MapColor.SAND : MapColor.SAND).instrument(NoteBlockInstrument.BASS).strength(2.0F).sound(SoundType.WOOD).ignitedByLava()));
+    public static final RegistrySupplier<BlockItem> WHITE_WOOD_TRIM_ITEM = BLOCK_ITEMS.register(WHITE_WOOD_TRIM_BLOCK.getId(), () -> new BlockItem(WHITE_WOOD_TRIM_BLOCK.get(), new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
+    public static final RegistrySupplier<Block> WHITE_WOOD_DOOR_BLOCK = BLOCKS.register("white_wood_door", () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_DOOR), BlockSetType.OAK));
+    public static final RegistrySupplier<BlockItem> WHITE_WOOD_DOOR_ITEM = BLOCK_ITEMS.register(WHITE_WOOD_DOOR_BLOCK.getId(), () -> new BlockItem(WHITE_WOOD_DOOR_BLOCK.get(), new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
+    public static final RegistrySupplier<Block> WHITE_WOOD_TRAPDOOR_BLOCK = BLOCKS.register("white_wood_trapdoor", () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_DOOR), BlockSetType.OAK));
+    public static final RegistrySupplier<BlockItem> WHITE_WOOD_TRAPDOOR_ITEM = BLOCK_ITEMS.register(WHITE_WOOD_TRAPDOOR_BLOCK.getId(), () -> new BlockItem(WHITE_WOOD_TRAPDOOR_BLOCK.get(), new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
+    public static final RegistrySupplier<Block> WHITE_WOOD_PRESSURE_PLATE_BLOCK = BLOCKS.register("white_wood_pressure_plate", () -> new Block(BlockBehaviour.Properties.copy(Blocks.OAK_PRESSURE_PLATE)));
+    public static final RegistrySupplier<BlockItem> WHITE_WOOD_PRESSURE_PLATE_ITEM = BLOCK_ITEMS.register(WHITE_WOOD_PRESSURE_PLATE_BLOCK.getId(), () -> new BlockItem(WHITE_WOOD_PRESSURE_PLATE_BLOCK.get(), new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
+    public static final RegistrySupplier<Block> WHITE_WOOD_FENCE_BLOCK = BLOCKS.register("white_wood_fence", () -> new FenceBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE)));
+    public static final RegistrySupplier<BlockItem> WHITE_WOOD_FENCE_ITEM = BLOCK_ITEMS.register(WHITE_WOOD_FENCE_BLOCK.getId(), () -> new BlockItem(WHITE_WOOD_FENCE_BLOCK.get(), new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
+    public static final RegistrySupplier<Block> WHITE_WOOD_FENCE_GATE_BLOCK = BLOCKS.register("white_wood_fence_gate", () -> new Block(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE_GATE)));
+    public static final RegistrySupplier<BlockItem> WHITE_WOOD_FENCE_GATE_ITEM = BLOCK_ITEMS.register(WHITE_WOOD_FENCE_GATE_BLOCK.getId(), () -> new BlockItem(WHITE_WOOD_FENCE_GATE_BLOCK.get(), new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
+    public static final RegistrySupplier<Block> WHITE_WOOD_PLANTER_BLOCK = BLOCKS.register("white_wood_planter", () -> new Block(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)));
+    public static final RegistrySupplier<BlockItem> WHITE_WOOD_PLANTER_ITEM = BLOCK_ITEMS.register(WHITE_WOOD_PLANTER_BLOCK.getId(), () -> new BlockItem(WHITE_WOOD_PLANTER_BLOCK.get(), new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
+
+
+
+
+
     public static void init() {
         BLOCKS.register();
         BLOCK_ITEMS.register();

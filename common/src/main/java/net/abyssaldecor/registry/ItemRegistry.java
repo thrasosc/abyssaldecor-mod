@@ -75,7 +75,6 @@ public class ItemRegistry {
     public static final RegistrySupplier<Item> WHITE_PEARL = ITEMS.register("white_pearl", () -> new Item(new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
     public static final RegistrySupplier<Item> WHITE_PEARL_BAR_DOOR = ITEMS.register("white_pearl_bar_door", () -> new Item(new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
     public static final RegistrySupplier<Item> WHITE_PEARLMEAL = ITEMS.register("white_pearlmeal", () -> new Item(new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
-    public static final RegistrySupplier<Item> WHITE_WOOD_DOOR = ITEMS.register("white_wood_door", () -> new Item(new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
     public static final RegistrySupplier<Item> WISTERIA_ELDER_WALL = ITEMS.register("wisteria_elder_wall", () -> new Item(new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
     public static final RegistrySupplier<Item> WISTERIA_PURPLE_WALL = ITEMS.register("wisteria_purple_wall", () -> new Item(new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
     public static final RegistrySupplier<Item> DUSTY_CD = ITEMS.register("dusty_cd", () -> new Item(new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
