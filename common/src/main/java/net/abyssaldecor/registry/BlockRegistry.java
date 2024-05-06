@@ -19,6 +19,7 @@ import net.minecraft.world.level.material.PushReaction;
 
 import static net.abyssaldecor.AbyssalDecor.MOD_ID;
 import static net.abyssaldecor.registry.ItemGroupRegistry.ABYSSALDECOR_TAB;
+import static net.minecraft.world.level.block.Blocks.*;
 
 public class BlockRegistry {
     public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(MOD_ID, Registries.BLOCK);
@@ -164,9 +165,9 @@ public class BlockRegistry {
     public static final RegistrySupplier<BlockItem> WHITE_WOOD_WOOD_ITEM = BLOCK_ITEMS.register(WHITE_WOOD_WOOD_BLOCK.getId(), () -> new BlockItem(WHITE_WOOD_WOOD_BLOCK.get(), new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
     public static final RegistrySupplier<Block> WHITE_WOOD_LOG_BLOCK = BLOCKS.register("white_wood_log", () -> new RotatedPillarBlock(BlockBehaviour.Properties.of().mapColor((blockState) -> blockState.getValue(RotatedPillarBlock.AXIS) == Direction.Axis.Y ? MapColor.SAND : MapColor.QUARTZ).instrument(NoteBlockInstrument.BASS).strength(2.0F).sound(SoundType.WOOD).ignitedByLava()));
     public static final RegistrySupplier<BlockItem> WHITE_WOOD_LOG_ITEM = BLOCK_ITEMS.register(WHITE_WOOD_LOG_BLOCK.getId(), () -> new BlockItem(WHITE_WOOD_LOG_BLOCK.get(), new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
-    public static final RegistrySupplier<Block> WHITE_WOOD_PLANKS_BLOCK = BLOCKS.register("white_wood_planks", () -> new Block(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)));
+    public static final RegistrySupplier<Block> WHITE_WOOD_PLANKS_BLOCK = BLOCKS.register("white_wood_planks", () -> new Block(BlockBehaviour.Properties.copy(OAK_PLANKS)));
     public static final RegistrySupplier<BlockItem> WHITE_WOOD_PLANKS_ITEM = BLOCK_ITEMS.register(WHITE_WOOD_PLANKS_BLOCK.getId(), () -> new BlockItem(WHITE_WOOD_PLANKS_BLOCK.get(), new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
-    public static final RegistrySupplier<Block> WHITE_WOOD_STAIRS_BLOCK = BLOCKS.register("white_wood_stairs", () -> new Block(BlockBehaviour.Properties.copy(Blocks.OAK_STAIRS)));
+    public static final RegistrySupplier<Block> WHITE_WOOD_STAIRS_BLOCK = BLOCKS.register("white_wood_stairs", () -> new StairBlock(OAK_PLANKS.defaultBlockState(), BlockBehaviour.Properties.copy(Blocks.OAK_STAIRS)));
     public static final RegistrySupplier<BlockItem> WHITE_WOOD_STAIRS_ITEM = BLOCK_ITEMS.register(WHITE_WOOD_STAIRS_BLOCK.getId(), () -> new BlockItem(WHITE_WOOD_STAIRS_BLOCK.get(), new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
     public static final RegistrySupplier<Block> WHITE_WOOD_SLAB_BLOCK = BLOCKS.register("white_wood_slab", () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SLAB)));
     public static final RegistrySupplier<BlockItem> WHITE_WOOD_SLAB_ITEM = BLOCK_ITEMS.register(WHITE_WOOD_SLAB_BLOCK.getId(), () -> new BlockItem(WHITE_WOOD_SLAB_BLOCK.get(), new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
@@ -184,7 +185,7 @@ public class BlockRegistry {
     public static final RegistrySupplier<BlockItem> WHITE_WOOD_FENCE_ITEM = BLOCK_ITEMS.register(WHITE_WOOD_FENCE_BLOCK.getId(), () -> new BlockItem(WHITE_WOOD_FENCE_BLOCK.get(), new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
     public static final RegistrySupplier<Block> WHITE_WOOD_FENCE_GATE_BLOCK = BLOCKS.register("white_wood_fence_gate", () -> new Block(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE_GATE)));
     public static final RegistrySupplier<BlockItem> WHITE_WOOD_FENCE_GATE_ITEM = BLOCK_ITEMS.register(WHITE_WOOD_FENCE_GATE_BLOCK.getId(), () -> new BlockItem(WHITE_WOOD_FENCE_GATE_BLOCK.get(), new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
-    public static final RegistrySupplier<Block> WHITE_WOOD_PLANTER_BLOCK = BLOCKS.register("white_wood_planter", () -> new Block(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)));
+    public static final RegistrySupplier<Block> WHITE_WOOD_PLANTER_BLOCK = BLOCKS.register("white_wood_planter", () -> new Block(BlockBehaviour.Properties.copy(OAK_PLANKS)));
     public static final RegistrySupplier<BlockItem> WHITE_WOOD_PLANTER_ITEM = BLOCK_ITEMS.register(WHITE_WOOD_PLANTER_BLOCK.getId(), () -> new BlockItem(WHITE_WOOD_PLANTER_BLOCK.get(), new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
 
 
