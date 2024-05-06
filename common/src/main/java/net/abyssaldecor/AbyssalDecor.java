@@ -11,7 +11,7 @@ public class AbyssalDecor {
     public static final String MOD_ID = "abyssaldecor";
 
     public static void init() {
-//        GeckoLib.initialize();
+        GeckoLib.initialize();
         System.out.println(ExampleExpectPlatform.getConfigDirectory().toAbsolutePath().normalize().toString());
         ItemGroupRegistry.init();
         ItemRegistry.init();
