@@ -10,10 +10,6 @@ repositories {
     maven {
         name = 'GeckoLib'
         url 'https://dl.cloudsmith.io/public/geckolib3/geckolib/maven/'
-        content {
-            includeGroupByRegex("software\\.bernie.*")
-            includeGroup("com.eliotlash.mclib")
-        }
     }
     maven { url 'https://dl.cloudsmith.io/public/tslat/sbl/maven/' }
 }
@@ -21,13 +17,13 @@ repositories {
 dependencies {
     // We depend on fabric loader here to use the fabric @Environment annotations and get the mixin dependencies
     // Do NOT use other classes from fabric loader
-    modImplementation "net.fabricmc:fabric-loader:${rootProject.fabric_loader_version}"
+    modImplementation "net.fabricmc:fabric-loader:${fabric_loader_version}"
     // Remove the next line if you don't want to depend on the API
-    modApi "dev.architectury:architectury:${rootProject.architectury_version}"
+    modApi "dev.architectury:architectury:${architectury_version}"
 
     modImplementation("software.bernie.geckolib:geckolib-fabric-${minecraft_version}:${geckolib_version}")
     implementation("com.eliotlash.mclib:mclib:20")
-    compileOnly "net.tslat.smartbrainlib:SmartBrainLib-forge-${minecraft_version}:${sbl_version}"
+    modCompileOnly("net.tslat.smartbrainlib:SmartBrainLib-forge-${minecraft_version}:${sbl_version}")
 }
 
 publishing {

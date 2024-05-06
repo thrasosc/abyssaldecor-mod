@@ -28,26 +28,22 @@ repositories {
     maven {
         name = 'GeckoLib'
         url 'https://dl.cloudsmith.io/public/geckolib3/geckolib/maven/'
-        content {
-            includeGroupByRegex("software\\.bernie.*")
-            includeGroup("com.eliotlash.mclib")
-        }
     }
     maven { url "https://dl.cloudsmith.io/public/tslat/sbl/maven/" }
 
 }
 
 dependencies {
-    forge "net.minecraftforge:forge:${rootProject.forge_version}"
+    forge "net.minecraftforge:forge:${forge_version}"
     // Remove the next line if you don't want to depend on the API
-    modApi "dev.architectury:architectury-forge:${rootProject.architectury_version}"
+    modApi "dev.architectury:architectury-forge:${architectury_version}"
 
     common(project(path: ":common", configuration: "namedElements")) { transitive false }
     shadowCommon(project(path: ":common", configuration: "transformProductionForge")) { transitive = false }
 
-    implementation ("software.bernie.geckolib:geckolib-forge-${minecraft_version}:${geckolib_version}")
-    implementation("com.eliotlash.mclib:mclib:20")
-    compileOnly "net.tslat.smartbrainlib:SmartBrainLib-forge-1.20.1:${project.sbl_version}"
+    modImplementation("software.bernie.geckolib:geckolib-forge-${minecraft_version}:${geckolib_version}")
+    forgeRuntimeLibrary("com.eliotlash.mclib:mclib:20")
+    modCompileOnly("net.tslat.smartbrainlib:SmartBrainLib-forge-${minecraft_version}:${sbl_version}")
 }
 
 processResources {
