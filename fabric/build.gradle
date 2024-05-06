@@ -20,9 +20,20 @@ configurations {
 }
 
 repositories {
+    maven {
+        name = 'GeckoLib'
+        url 'https://dl.cloudsmith.io/public/geckolib3/geckolib/maven/'
+        content {
+            includeGroupByRegex("software\\.bernie.*")
+            includeGroup("com.eliotlash.mclib")
+        }
+    }
+    maven { url 'https://dl.cloudsmith.io/public/tslat/sbl/maven/' }
     // Needed for Fabric only at the moment
-    maven { url "https://maven.terraformersmc.com/releases" }
-}
+    maven {
+        name = "Terraformers"
+        url = "https://maven.terraformersmc.com/"
+    }}
 
 dependencies {
     modImplementation "net.fabricmc:fabric-loader:${rootProject.fabric_loader_version}"
@@ -33,7 +44,10 @@ dependencies {
     common(project(path: ":common", configuration: "namedElements")) { transitive false }
     shadowCommon(project(path: ":common", configuration: "transformProductionFabric")) { transitive false }
 
-    modApi "com.terraformersmc:modmenu:7.2.2"
+    modImplementation("com.terraformersmc:modmenu:${project.modmenu_version}")
+    modImplementation("software.bernie.geckolib:geckolib-fabric-${minecraft_version}:${geckolib_version}")
+    implementation("com.eliotlash.mclib:mclib:20")
+    modImplementation "net.tslat.smartbrainlib:SmartBrainLib-fabric-1.20.1:${project.sbl_version}"
 }
 
 processResources {

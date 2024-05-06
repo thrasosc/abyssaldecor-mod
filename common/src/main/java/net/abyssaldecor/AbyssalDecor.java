@@ -5,12 +5,13 @@ import net.abyssaldecor.registry.BlockRegistry;
 import net.abyssaldecor.registry.ItemGroupRegistry;
 import net.abyssaldecor.registry.ItemRegistry;
 import net.minecraft.client.renderer.RenderType;
+import software.bernie.geckolib.GeckoLib;
 
 public class AbyssalDecor {
     public static final String MOD_ID = "abyssaldecor";
 
     public static void init() {
-//        AzureLib.initialize();
+//        GeckoLib.initialize();
         System.out.println(ExampleExpectPlatform.getConfigDirectory().toAbsolutePath().normalize().toString());
         ItemGroupRegistry.init();
         ItemRegistry.init();
