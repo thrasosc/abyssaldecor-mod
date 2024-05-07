@@ -43,7 +43,7 @@ dependencies {
     modImplementation("com.terraformersmc:modmenu:${project.modmenu_version}")
     modImplementation("software.bernie.geckolib:geckolib-fabric-${minecraft_version}:${geckolib_version}")
     implementation("com.eliotlash.mclib:mclib:20")
-    modCompileOnly("net.tslat.smartbrainlib:SmartBrainLib-fabric-${minecraft_version}:${project.sbl_version}")
+    modImplementation("net.tslat.smartbrainlib:SmartBrainLib-fabric-${minecraft_version}:${project.sbl_version}")
 }
 
 processResources {

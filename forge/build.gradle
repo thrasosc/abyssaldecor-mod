@@ -43,7 +43,7 @@ dependencies {
 
     modImplementation("software.bernie.geckolib:geckolib-forge-${minecraft_version}:${geckolib_version}")
     forgeRuntimeLibrary("com.eliotlash.mclib:mclib:20")
-    modCompileOnly("net.tslat.smartbrainlib:SmartBrainLib-forge-${minecraft_version}:${sbl_version}")
+    modImplementation("net.tslat.smartbrainlib:SmartBrainLib-forge-${minecraft_version}:${sbl_version}")
 }
 
 processResources {
