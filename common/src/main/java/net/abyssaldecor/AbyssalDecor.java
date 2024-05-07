@@ -43,5 +43,6 @@ public class AbyssalDecor {
         RenderTypeRegistry.register(RenderType.cutoutMipped(), BlockRegistry.WALL_BULB_LAMP.get());
         RenderTypeRegistry.register(RenderType.translucent(), BlockRegistry.RAINBOW_LAMP_BLOCK.get());
         RenderTypeRegistry.register(RenderType.cutoutMipped(), BlockRegistry.GARGOYLE_BLOCK.get());
+        RenderTypeRegistry.register(RenderType.cutoutMipped(), BlockRegistry.WHITE_PEARL_BLOCK.get());
     }
 }

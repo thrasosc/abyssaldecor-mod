@@ -191,6 +191,12 @@ public class BlockRegistry {
 
 
 
+    public static final RegistrySupplier<Block> WHITE_PEARL_BLOCK = BLOCKS.register("white_pearl", () -> new WhitePearlBlock(BlockBehaviour.Properties.copy(Blocks.COMPOSTER).ignitedByLava().instrument(NoteBlockInstrument.BASS).sound(SoundType.WOOD).strength(2f, 10f).noOcclusion().isRedstoneConductor((bs, br, bp) -> false)));
+    public static final RegistrySupplier<BlockItem> WHITE_PEARL_ITEM = BLOCK_ITEMS.register(WHITE_PEARL_BLOCK.getId(), () -> new BlockItem(WHITE_PEARL_BLOCK.get(), new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
+
+
+
+
 
 
     public static void init() {
