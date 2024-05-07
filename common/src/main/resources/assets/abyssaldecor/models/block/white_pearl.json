@@ -3,7 +3,7 @@
   "textures": {
     "all": "abyssaldecor:block/tinywhitepearl",
     "particle": "abyssaldecor:block/tinywhitepearl",
-    "2": "abyssaldecor:block/tinywhitepearl"
+    "0": "abyssaldecor:block/tinywhitepearl"
   },
   "render_type": "solid"
 }
