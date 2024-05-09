@@ -4,6 +4,5 @@
     "all": "abyssaldecor:block/flowerlamp",
     "particle": "abyssaldecor:block/flowerlamp",
     "0": "abyssaldecor:block/flowerlamp"
-  },
-  "render_type": "cutout_mipped"
+  }
 }

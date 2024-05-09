@@ -1,7 +1,6 @@
 
 package net.abyssaldecor.block;
 
-import net.abyssaldecor.block.abstraction.LampBlock;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.network.chat.Component;
@@ -16,24 +15,22 @@ import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.block.state.properties.BooleanProperty;
 import net.minecraft.world.level.block.state.properties.DirectionProperty;
-import net.minecraft.world.level.block.state.properties.Property;
 import net.minecraft.world.level.material.FluidState;
 import net.minecraft.world.level.material.Fluids;
-import net.minecraft.world.level.storage.loot.LootParams;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
 
-import java.util.Collections;
 import java.util.List;
 
-public class WallBulbLampBlock extends LampBlock implements SimpleWaterloggedBlock {
-	public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
+public class FrostedCeilingLampBlock extends Block implements SimpleWaterloggedBlock {
+	public static final DirectionProperty FACING = DirectionalBlock.FACING;
 	public static final BooleanProperty WATERLOGGED = BlockStateProperties.WATERLOGGED;
 
-	public WallBulbLampBlock(Properties properties) {
+
+
+	public FrostedCeilingLampBlock(Properties properties){
 		super(properties);
-		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH).setValue(WATERLOGGED, false));
 	}
 
 	@Override
@@ -59,10 +56,10 @@ public class WallBulbLampBlock extends LampBlock implements SimpleWaterloggedBlo
 	@Override
 	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
 		return switch (state.getValue(FACING)) {
-			default -> Shapes.or(box(5, 8, 5, 11, 14, 11), box(6, 3, 0, 10, 14, 1), box(7, 0, 7, 9, 8, 9));
-			case NORTH -> Shapes.or(box(5, 8, 5, 11, 14, 11), box(6, 3, 15, 10, 14, 16), box(7, 0, 7, 9, 8, 9));
-			case EAST -> Shapes.or(box(5, 8, 5, 11, 14, 11), box(0, 3, 6, 1, 14, 10), box(7, 0, 7, 9, 8, 9));
-			case WEST -> Shapes.or(box(5, 8, 5, 11, 14, 11), box(15, 3, 6, 16, 14, 10), box(7, 0, 7, 9, 8, 9));
+			default -> Shapes.or(box(2, 2, 5, 14, 14, 11), box(5, 5, 0, 11, 11, 5));
+			case NORTH -> Shapes.or(box(2, 2, 5, 14, 14, 11), box(5, 5, 11, 11, 11, 16));
+			case EAST -> Shapes.or(box(5, 2, 2, 11, 14, 14), box(0, 5, 5, 5, 11, 11));
+			case WEST -> Shapes.or(box(5, 2, 2, 11, 14, 14), box(11, 5, 5, 16, 11, 11));
 			case UP -> Shapes.or(box(2, 5, 2, 14, 11, 14), box(5, 0, 5, 11, 5, 11));
 			case DOWN -> Shapes.or(box(2, 5, 2, 14, 11, 14), box(5, 11, 5, 11, 16, 11));
 		};
@@ -70,15 +67,12 @@ public class WallBulbLampBlock extends LampBlock implements SimpleWaterloggedBlo
 
 	@Override
 	protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
-		builder.add(new Property[]{LIT});
 		builder.add(FACING, WATERLOGGED);
 	}
 
 	@Override
 	public BlockState getStateForPlacement(BlockPlaceContext context) {
 		boolean flag = context.getLevel().getFluidState(context.getClickedPos()).getType() == Fluids.WATER;
-		if (context.getClickedFace().getAxis() == Direction.Axis.Y)
-			return this.defaultBlockState().setValue(FACING, Direction.NORTH).setValue(WATERLOGGED, flag);
 		return this.defaultBlockState().setValue(FACING, context.getClickedFace()).setValue(WATERLOGGED, flag);
 	}
 
@@ -103,11 +97,4 @@ public class WallBulbLampBlock extends LampBlock implements SimpleWaterloggedBlo
 		return super.updateShape(state, facing, facingState, world, currentPos, facingPos);
 	}
 
-	@Override
-	public List<ItemStack> getDrops(BlockState state, LootParams.Builder builder) {
-		List<ItemStack> dropsOriginal = super.getDrops(state, builder);
-		if (!dropsOriginal.isEmpty())
-			return dropsOriginal;
-		return Collections.singletonList(new ItemStack(this, 1));
-	}
 }

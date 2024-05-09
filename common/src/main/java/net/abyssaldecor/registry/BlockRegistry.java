@@ -139,7 +139,7 @@ public class BlockRegistry {
 
     public static final RegistrySupplier<Block> FRESNEL_LAMP_BLOCK = BLOCKS.register("fresnel_lamp", () -> new FresnelLampBlock(BlockBehaviour.Properties.copy(Blocks.GLASS).instrument(NoteBlockInstrument.HAT).sound(SoundType.GLASS).strength(2f, 10f).lightLevel(s -> 15).noOcclusion().isRedstoneConductor((bs, br, bp) -> false)));
 
-    public static final RegistrySupplier<BlockItem> FRENSEL_LAMP_ITEM = BLOCK_ITEMS.register(FRESNEL_LAMP_BLOCK.getId(), () -> new BlockItem(FRESNEL_LAMP_BLOCK.get(), new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
+    public static final RegistrySupplier<BlockItem> FRESNEL_LAMP_ITEM = BLOCK_ITEMS.register(FRESNEL_LAMP_BLOCK.getId(), () -> new BlockItem(FRESNEL_LAMP_BLOCK.get(), new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
 
     public static final RegistrySupplier<Block> RAINBOW_LAMP_BLOCK = BLOCKS.register("rainbow_1", () -> new Rainbow1Block(BlockBehaviour.Properties.copy(Blocks.LANTERN).instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.GLASS).strength(1f, 10f).lightLevel(s -> 15).noOcclusion().hasPostProcess((bs, br, bp) -> true).emissiveRendering((bs, br, bp) -> true).isRedstoneConductor((bs, br, bp) -> false)));
     public static final RegistrySupplier<BlockItem> RAINBOW_1_ITEM = BLOCK_ITEMS.register(RAINBOW_LAMP_BLOCK.getId(), () -> new BlockItem(RAINBOW_LAMP_BLOCK.get(), new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
@@ -198,6 +198,24 @@ public class BlockRegistry {
 
 
 
+
+    public static final RegistrySupplier<Block> LION_STATUE_BOTTOM = BLOCKS.register("lion_statue_bottom", () -> new LionStatueBottomBlock(BlockBehaviour.Properties.copy(Blocks.STONE).instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.STONE).strength(3f, 10f).requiresCorrectToolForDrops().noOcclusion().pushReaction(PushReaction.BLOCK).isRedstoneConductor((bs, br, bp) -> false)));
+    public static final RegistrySupplier<BlockItem> LION_STATUE_BOTTOM_ITEM = BLOCK_ITEMS.register(LION_STATUE_BOTTOM.getId(), () -> new BlockItem(LION_STATUE_BOTTOM.get(), new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
+
+    public static final RegistrySupplier<Block> LION_STATUE_TOP = BLOCKS.register("lion_statue_top", () -> new LionStatueTopBlock(BlockBehaviour.Properties.copy(Blocks.STONE).instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.STONE).strength(3f, 10f).requiresCorrectToolForDrops().noOcclusion().pushReaction(PushReaction.BLOCK).isRedstoneConductor((bs, br, bp) -> false)));
+
+    public static final RegistrySupplier<BlockItem> LION_STATUE_TOP_ITEM = BLOCK_ITEMS.register(LION_STATUE_TOP.getId(), () -> new BlockItem(LION_STATUE_TOP.get(), new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
+
+    public static final RegistrySupplier<Block> FLOWER_LAMP = BLOCKS.register("flower_lamp", () -> new FlowerLampBlock(BlockBehaviour.Properties.copy(LANTERN).sound(SoundType.LANTERN).strength(1f).noOcclusion().isRedstoneConductor((bs, br, bp) -> false)));
+    public static final RegistrySupplier<BlockItem> FLOWER_LAMP_ITEM = BLOCK_ITEMS.register(FLOWER_LAMP.getId(), () -> new BlockItem(FLOWER_LAMP.get(), new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
+
+    public static final RegistrySupplier<Block> FLOWER_LAMP_ON = BLOCKS.register("flower_lamp_on", () -> new FlowerLampOnBlock(BlockBehaviour.Properties.copy(LANTERN).sound(SoundType.LANTERN).strength(1f).lightLevel(s -> 15).noOcclusion().hasPostProcess((bs, br, bp) -> true).emissiveRendering((bs, br, bp) -> true).isRedstoneConductor((bs, br, bp) -> false)));
+    public static final RegistrySupplier<BlockItem> FLOWER_LAMP_ON_ITEM = BLOCK_ITEMS.register(FLOWER_LAMP_ON.getId(), () -> new BlockItem(FLOWER_LAMP_ON.get(), new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
+    public static final RegistrySupplier<Block> FROSTED_LAMP = BLOCKS.register("frosted_ceiling_lamp", () -> new FrostedCeilingLampBlock(BlockBehaviour.Properties.copy(LANTERN).sound(SoundType.LANTERN).strength(1f).noOcclusion().isRedstoneConductor((bs, br, bp) -> false)));
+    public static final RegistrySupplier<BlockItem> FROSTED_LAMP_ITEM = BLOCK_ITEMS.register(FROSTED_LAMP.getId(), () -> new BlockItem(FROSTED_LAMP.get(), new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
+
+    public static final RegistrySupplier<Block> FROSTED_LAMP_ON = BLOCKS.register("frosted_ceiling_lamp_lit", () -> new FrostedCeilingLampLitBlock(BlockBehaviour.Properties.copy(LANTERN).sound(SoundType.LANTERN).strength(1f).lightLevel(s -> 15).noOcclusion().hasPostProcess((bs, br, bp) -> true).emissiveRendering((bs, br, bp) -> true).isRedstoneConductor((bs, br, bp) -> false)));
+    public static final RegistrySupplier<BlockItem> FROSTED_LAMP_ON_ITEM = BLOCK_ITEMS.register(FROSTED_LAMP_ON.getId(), () -> new BlockItem(FROSTED_LAMP_ON.get(), new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
 
     public static void init() {
         BLOCKS.register();

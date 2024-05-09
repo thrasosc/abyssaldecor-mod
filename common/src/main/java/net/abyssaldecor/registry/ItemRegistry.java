@@ -50,7 +50,6 @@ public class ItemRegistry {
     public static final RegistrySupplier<Item> GRIME = ITEMS.register("grime", () -> new Item(new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
     public static final RegistrySupplier<Item> GRIME_CARPET = ITEMS.register("grime_carpet", () -> new Item(new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
     public static final RegistrySupplier<Item> IRON_PUSH_DOOR = ITEMS.register("iron_push_door", () -> new Item(new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
-    public static final RegistrySupplier<Item> LION_STATUE = ITEMS.register("lion_statue", () -> new Item(new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
     public static final RegistrySupplier<Item> MOLDY_FUZZ = ITEMS.register("moldy_fuzz", () -> new Item(new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
     public static final RegistrySupplier<Item> BULBOUS_MOLDY_HANGER = ITEMS.register("bulbous_moldy_hanger", () -> new Item(new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));
     public static final RegistrySupplier<Item> MOLDY_HANGER = ITEMS.register("moldy_hanger", () -> new Item(new Item.Properties().arch$tab(ABYSSALDECOR_TAB)));

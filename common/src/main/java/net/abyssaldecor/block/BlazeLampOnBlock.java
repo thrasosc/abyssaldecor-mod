@@ -56,6 +56,8 @@ public class BlazeLampOnBlock extends Block {
 			case NORTH -> Shapes.or(box(6.5, 5, 10.5, 9.5, 16, 13.5), box(6, 3, 15, 10, 13, 16));
 			case EAST -> Shapes.or(box(2.5, 5, 6.5, 5.5, 16, 9.5), box(0, 3, 6, 1, 13, 10));
 			case WEST -> Shapes.or(box(10.5, 5, 6.5, 13.5, 16, 9.5), box(15, 3, 6, 16, 13, 10));
+			case UP -> Shapes.or(box(2, 5, 2, 14, 11, 14), box(5, 0, 5, 11, 5, 11));
+			case DOWN -> Shapes.or(box(2, 5, 2, 14, 11, 14), box(5, 11, 5, 11, 16, 11));
 		};
 	}
 

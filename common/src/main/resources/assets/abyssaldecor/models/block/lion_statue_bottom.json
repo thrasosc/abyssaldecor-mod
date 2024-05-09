@@ -4,6 +4,5 @@
     "all": "abyssaldecor:block/ammonite",
     "particle": "abyssaldecor:block/ammonite",
     "2": "abyssaldecor:block/lionstatue"
-  },
-  "render_type": "solid"
+  }
 }
